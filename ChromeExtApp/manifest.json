@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "ExtApp",
+    "version": "1.0.1", 
+    "author": "Vikash Rai",   
+    "description": "Tracking Browsing History",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "history",
+        "notifications"
+    ],
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["script.js"]
+        }
+    ],           
+    "action":{
+        "default_popup": "popup.html"
+    },
+    "content_security_policy": {
+        "extension_page": "worker-src 'self' 'wasm-unsafe-eval' 'unsafe-inline' '<all_urls>'; 'sha256-RUHE02GpZU52P1p10yguBsx/19FoS/+uCwlTVO0ZSBg=' object-src 'none'"
+    }
+}

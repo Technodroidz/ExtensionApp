@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "firebase-admin": "^11.5.0",
+    "webpack": "^5.75.0"
+  }
+}
