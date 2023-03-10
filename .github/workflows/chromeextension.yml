@@ -11,19 +11,4 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Build artifact
-      run: |
-        # Build your artifact here
-        echo "Building artifact"
-        
-    - name: Create release
-      id: create_release
-      uses: actions/create-release@v1
-
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: chrome-extension.zip
-        path: dist/chrome-extension.zip   
+      uses: actions/checkout@v2 
