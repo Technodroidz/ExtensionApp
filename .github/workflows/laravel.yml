@@ -14,5 +14,3 @@ jobs:
     steps:
     - name: Copy .env
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
-    - name: Directory Permissions
-      run: chmod -R 777 storage bootstrap/cache
