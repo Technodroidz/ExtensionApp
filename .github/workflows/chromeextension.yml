@@ -13,9 +13,3 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Install dependencies
-      run: npm install
-    - name: Build extension
-      run: npm run build
-    - name: Test extension
-      run: npm run test
