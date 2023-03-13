@@ -21,4 +21,30 @@ jobs:
         git commit -m "Automatically committed by GitHub Actions"
         git push   
     - name: Copy .env
-      run: php -r "file_exists('.env') || copy('.env.example', '.env');"    
+      run: php -r "file_exists('.env') || copy('.env.example', '.env');"  
+
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 7.4
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-ansi --no-interaction --no-progress --no-scripts
+
+      - name: Generate key
+        run: php artisan key:generate
+
+      - name: Run tests
+        run: vendor/bin/phpunit --testdox --colors=never
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-results
+          path: public      
