@@ -1,4 +1,4 @@
-name: Chrome Extension 
+name: Chrome Extension CI
 
 on:
   push:
@@ -8,15 +8,42 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Configure Git
-      run: |
-        git config --global user.email "vikash27hbk@gmail.com.com"
-        git config --global user.name "Vikash Rai"
-    - name: Commit Changes
-      run: |
-        git add .
-        git commit -m "Automatically committed by GitHub Actions"
-        git push 
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "vikash27hbk@gmail.com"
+          git config --global user.name "Vikash Rai"
+          
+      - name: Commit Changes
+        run: |
+          git add .
+          git commit -m "Automatically committed by GitHub Actions"
+          git push  
+      
+      - name: Install Node.js and NPM
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build extension
+        run: npm run build
+
+      - name: Archive extension
+        uses: actions/upload-artifact@v2
+        with:
+          name: extension
+          path: dist
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: artifacts
+          path: |
+            dist/*.zip
+            dist/*.crx
