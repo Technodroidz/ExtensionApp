@@ -7,9 +7,18 @@ on:
 
 jobs:
   laravel-tests:
-
     runs-on: ubuntu-latest
-
+      
     steps:
+    - uses: actions/checkout@v2
+    - name: Configure Git
+      run: |
+        git config --global user.email "vikash27hbk@gmail.com.com"
+        git config --global user.name "Vikash Rai"
+    - name: Commit Changes
+      run: |
+        git add .
+        git commit -m "Automatically committed by GitHub Actions"
+        git push   
     - name: Copy .env
-      run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+      run: php -r "file_exists('.env') || copy('.env.example', '.env');"    
