@@ -1,26 +1,58 @@
-name: Swift
+name: Safari Extension CI
 
 on:
   push:
     branches:
       - main
- 
 
 jobs:
-  build:
-
-    runs-on: macos-latest
-
+  build-and-test:
+    runs-on: macOS-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: Configure Git
-      run: |
-        git config --global user.email "vikash27hbk@gmail.com.com"
-        git config --global user.name "Vikash Rai"
-    - name: Commit Changes
-      run: |
-        git add .
-        git commit -m "Automatically committed by GitHub Actions"
-        git push   
-    - name: Copy .env
-      run: php -r "file_exists('.env') || copy('.env.example', '.env');" 
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "vikash27hbk@gmail.com"
+          git config --global user.name "Vikash Rai"
+          
+      - name: Commit Changes
+        run: |
+          git add .
+          git commit -m "Automatically committed by GitHub Actions"
+          git push  
+      
+      - name: Install Xcode
+        uses: actions/setup-xcode@v2
+        with:
+          xcode-version: '13'
+
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7'
+
+      - name: Install Bundler
+        run: gem install bundler
+
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Build extension
+        run: xcodebuild -project Extension/Extension.xcodeproj -scheme Extension -destination "generic/platform=macOS" build
+
+      - name: Test extension
+        run: xcodebuild -project Extension/Extension.xcodeproj -scheme Extension -destination "generic/platform=macOS" test
+
+      - name: Archive extension
+        run: xcodebuild -project Extension/Extension.xcodeproj -scheme Extension -destination "generic/platform=macOS" archive -archivePath "build/Archive.xcarchive"
+
+      - name: Export archive as Safari extension
+        run: xcodebuild -exportArchive -archivePath "build/Archive.xcarchive" -exportPath "build" -exportOptionsPlist "Extension/ExportOptions.plist"
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: artifacts
+          path: build/*.safariextz
