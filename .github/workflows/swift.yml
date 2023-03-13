@@ -26,7 +26,7 @@ jobs:
       - name: Install Xcode
         uses: actions/setup-xcode@v2
         with:
-          xcode-version: '13'
+          xcode-version: '14'
 
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
