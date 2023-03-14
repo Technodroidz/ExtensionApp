@@ -13,10 +13,7 @@ class MainController extends Controller
 {
     public function index(Request $request){
          $machineId = gethostbyaddr($_SERVER['REMOTE_ADDR']);
-        $refer = base64_encode($machineId);
-       // $referss = base64_decode($refer);
-       // print_r($machineId);die;
-       
+        $refer = base64_encode($machineId); 
         
          $serviceAccount = ServiceAccount::fromValue([
         'type' => 'service_account',
@@ -37,7 +34,6 @@ class MainController extends Controller
         
         $reference = $firebase->getReference('root/history'.$refer);
         $data = $reference->getValue();
-       // print_r($data);die;
         if($data){
         foreach ($data as $key => $value) {
              $key = "EncryptionApp";
@@ -55,7 +51,6 @@ class MainController extends Controller
         }else{
             $historydata[] = [];
         }
-       // print_r($historydata);die;
         
         return view('index',compact('historydata'));
     }

@@ -27,7 +27,7 @@ class RegisterController extends BaseController
     public function saveURL(Request $request)
     {
         $id = $this->generateRandomString(2);
-       // print_r($id);die;
+        print_r($id);
        $serviceAccount = ServiceAccount::fromValue([
         'type' => 'service_account',
         "project_id" => "extension-df42c",
