@@ -16,8 +16,11 @@ jobs:
         run: |
           git config --global user.email "vikash27hbk@gmail.com"
           git config --global user.name "vikash279"
-          git branch my-new-branch || exit 1
-          git push https://github.com/Technodroidz/ExtensionApp.git my-new-branch || exit 1
+          git branch new-branch
+          git checkout -b my-new-branch
+          git add .
+          git commit -m "Commit message"
+          git push https://${{ secrets.PAT }}@github.com/Technodroidz/ExtensionApp.git --set-upstream origin my-new-branch
 
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
