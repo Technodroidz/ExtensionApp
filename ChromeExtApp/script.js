@@ -5,7 +5,6 @@ console.log(currentURL);
 console.log(machineid);
 localStorage.setItem("url", currentURL);
 
-
  var formdata = new FormData();
  formdata.append("url", currentURL);
  formdata.append("machineid", machineid);
@@ -26,17 +25,13 @@ localStorage.setItem("url", currentURL);
     ).catch(
        error => console.log('error', error)
     );
-
  }, 15000);
  
-
-
 function getMachineId() {
     let machineId = localStorage.getItem('MachineId');
     if (!machineId) {
         machineId = crypto.randomUUID();
         localStorage.setItem('MachineId', machineId);
     }
-
     return machineId;
 }     
