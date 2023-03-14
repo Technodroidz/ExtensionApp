@@ -15,7 +15,8 @@ jobs:
       - name: Configure Git
         run: |
           git config --global user.email "vikash27hbk@gmail.com"
-          git config --global user.name "Vikash Rai"
+          git config --global user.name "vikash279"
+          git branch new-branch
           git checkout -b new-branch
           git add .
           git commit -m "Commit message"
