@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "ExtApp",
+    "name": "ChromeExtApp",
     "version": "1.0.1", 
     "author": "Vikash Rai",   
     "description": "Tracking Browsing History",
