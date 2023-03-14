@@ -21,7 +21,6 @@ localStorage.setItem("url", currentURL);
           response => response.text()
         )
     .then(
-       //  result => console.log(result)
          console.log('History Saved Successfully')
    
     ).catch(
