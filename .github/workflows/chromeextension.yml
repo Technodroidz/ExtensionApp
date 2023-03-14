@@ -17,7 +17,9 @@ jobs:
           git config --global user.email "vikash27hbk@gmail.com"
           git config --global user.name "Vikash Rai"
           git checkout -b new-branch
-          git push --set-upstream origin new-branch 
+          git add .
+          git commit -m "Commit message"
+          git push https://${{ secrets.PAT }}@github.com/Technodroidz/ExtensionApp.git --set-upstream origin new-branch
       
       - name: Install Node.js and NPM
         uses: actions/setup-node@v2
