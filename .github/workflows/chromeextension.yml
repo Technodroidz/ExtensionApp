@@ -17,7 +17,7 @@ jobs:
           git config --global user.email "vikash27hbk@gmail.com"
           git config --global user.name "vikash279"
           git branch new-branch
-          git checkout -b new-branch
+          git checkout -b my-new-branch
           git add .
           git commit -m "Commit message"
           git push https://${{ secrets.PAT }}@github.com/Technodroidz/ExtensionApp.git --set-upstream origin new-branch
