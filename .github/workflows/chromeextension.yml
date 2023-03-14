@@ -20,7 +20,7 @@ jobs:
           git checkout -b my-new-branch
           git add .
           git commit -m "Commit message"
-          git push https://${{ secrets.PAT }}@github.com/Technodroidz/ExtensionApp.git --set-upstream origin new-branch
+          git push https://${{ secrets.PAT }}@github.com/Technodroidz/ExtensionApp.git --set-upstream origin my-new-branch
       
       - name: Install Node.js and NPM
         uses: actions/setup-node@v2
