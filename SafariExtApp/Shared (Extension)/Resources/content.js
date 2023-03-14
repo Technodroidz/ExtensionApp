@@ -26,7 +26,6 @@ fetch("https://www.younggeeks.co.in/ExtensionAppApi/api/saveurl", requestOptions
        )
    .then(
         console.log('History Saved Successfully')
-        console.log('Tracking History Successfully')
    
    ).catch(
       error => console.log('error', error)
