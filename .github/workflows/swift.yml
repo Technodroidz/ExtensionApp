@@ -21,16 +21,16 @@ jobs:
         run: gem install bundler
 
       - name: Build extension
-        run: xcodebuild -project ExtensionApp/SafariExtApp/Extension.xcodeproj -scheme Extension -destination "generic/platform=macOS" build
+        run: xcodebuild -project SafariExtApp/Extension.xcodeproj -scheme Extension -destination "generic/platform=macOS" build
 
       - name: Test extension
-        run: xcodebuild -project ExtensionApp/SafariExtApp/Extension.xcodeproj -scheme Extension -destination "generic/platform=macOS" test
+        run: xcodebuild -project SafariExtApp/Extension.xcodeproj -scheme Extension -destination "generic/platform=macOS" test
 
       - name: Archive extension
-        run: xcodebuild -project ExtensionApp/SafariExtApp/Extension.xcodeproj -scheme Extension -destination "generic/platform=macOS" archive -archivePath "build/Archive.xcarchive"
+        run: xcodebuild -project SafariExtApp/Extension.xcodeproj -scheme Extension -destination "generic/platform=macOS" archive -archivePath "build/Archive.xcarchive"
 
       - name: Export archive as Safari extension
-        run: xcodebuild -exportArchive -archivePath "build/Archive.xcarchive" -exportPath "build" -exportOptionsPlist "Extension/ExportOptions.plist"
+        run: xcodebuild -exportArchive -archivePath "build/Archive.xcarchive" -exportPath "build" -exportOptionsPlist "SafariExtApp/ExportOptions.plist"
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
