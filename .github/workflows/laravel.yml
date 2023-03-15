@@ -22,6 +22,7 @@ jobs:
 
       - name: Generate key
         run: php artisan key:generate
+        working-directory: ./WebAndApiExt
 
       - name: Run tests
         run: vendor/bin/phpunit --testdox --colors=never
