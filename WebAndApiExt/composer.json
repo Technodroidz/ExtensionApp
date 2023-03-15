@@ -7,7 +7,8 @@
     "authors": [
         {
             "name": "Vikash Rai",
-            "email": "vikash27hbk@gmail.com"
+            "email": "vikash27hbk@gmail.com",
+            "role":"Developer"
         }
     ],
     "require": {
