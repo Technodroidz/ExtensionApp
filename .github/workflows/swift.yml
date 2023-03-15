@@ -20,18 +20,6 @@ jobs:
       - name: Install Bundler
         run: gem install bundler
 
-      - name: Build extension
-        run: xcodebuild -project SafariExtApp/ExtensionMobileApp.xcodeproj -scheme ExtensionMobileApp -destination "generic/platform=iOS" build
-
-      - name: Test extension
-        run: xcodebuild -project SafariExtApp/ExtensionMobileApp.xcodeproj -scheme ExtensionMobileApp -destination "generic/platform=iOS" test
-
-      - name: Archive extension
-        run: xcodebuild -project SafariExtApp/ExtensionMobileApp.xcodeproj -scheme ExtensionMobileApp -destination "generic/platform=iOS" archive -archivePath "build/Archive.xcarchive"
-
-      - name: Export archive as Safari extension
-        run: xcodebuild -exportArchive -archivePath "build/Archive.xcarchive" -exportPath "build" -exportOptionsPlist "SafariExtApp/ExportOptions.plist"
-
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
