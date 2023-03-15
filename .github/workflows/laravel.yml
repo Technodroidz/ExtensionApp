@@ -15,8 +15,9 @@ jobs:
       - name: Copy .env
         run: php -r "file_exists('.env') || copy('.env.example', '.env');"
         
-      - name: Install Dependencies
-        run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist  
+      - name: Install dependencies
+        run: composer install
+        working-directory: ./WebAndApiExt
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
