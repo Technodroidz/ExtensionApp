@@ -20,9 +20,6 @@ jobs:
       - name: Install Bundler
         run: gem install bundler
 
-      - name: Install dependencies
-        run: bundle install
-
       - name: Build extension
         run: xcodebuild -project Extension/Extension.xcodeproj -scheme Extension -destination "generic/platform=macOS" build
 
