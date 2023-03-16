@@ -50,8 +50,17 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm ci
-      - run: npm test
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build assets
+        run: npm run build
+
+      - name: Run tests
+        run: npm run test
+
+      - name: Run linters
+        run: npm run lint
 
   publish-gpr:
     needs: build-and-test
