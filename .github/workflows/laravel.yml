@@ -3,10 +3,7 @@ name: Laravel
 on:
   push:
     branches:
-      - main
-  release:
-    types: 
-      - created    
+      - main  
 
 jobs:
   build-and-test:
@@ -46,33 +43,3 @@ jobs:
           draft: false
           prerelease: false
           token: ${{ secrets.PAT }} 
-
-      - name: Checkout code again
-        uses: actions/checkout@v2
-        
-      - name: Setup Node.js
-        uses: actions/setup-node@v2.1.5
-        with:
-          node-version: 16
-          
-      - name: Install dependencies
-        run: npm install
-        working-directory: ./WebAndApiExt
-
-  publish-gpr:
-    needs: build-and-test
-    runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2.1.5
-        with:
-          node-version: 16
-          registry-url: https://npm.pkg.github.com/
-          scope: '@your-org-name'
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.PAT }}
-        working-directory: ./WebAndApiExt
