@@ -39,7 +39,6 @@ class MainController extends Controller
              $key = "EncryptionApp";
              $iv = random_bytes(16);
             $url = openssl_decrypt($value["url"], "aes-256-cbc", $key, 0, $iv);
-           // print_r($url);die;
             $historydata[] = [
              'key' =>  $key,
              'date' => $value["date"],

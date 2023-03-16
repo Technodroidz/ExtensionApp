@@ -49,15 +49,12 @@ class RegisterController extends BaseController
         $value = $reference->getValue();
         $machineId = gethostbyaddr($_SERVER['REMOTE_ADDR']);
         $refer = base64_encode($machineId);
-       // $referss = base64_decode($refer);
-       // print_r($machineId);die;
        $message = $request->url;
        $key = "EncryptionApp";
        $iv = random_bytes(16);
         $encrypted_message = base64_encode($message);
 
         if(!empty($request->url) and !empty($request->machineid)){
-       // $newData = $firebase->getReference('root/history'.$id)
         $newData = $firebase->getReference('root/history'.$refer)
         ->push([
             'url' => $encrypted_message,

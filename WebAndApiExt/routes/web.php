@@ -14,6 +14,7 @@ use App\Http\Controllers\MainController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//by vikash rai
 Route::get('/cleareverything', function () {
     $clearcache = Artisan::call('cache:clear');
     echo "Cache cleared<br>";

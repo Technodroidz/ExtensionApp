@@ -61,8 +61,7 @@
             "@php artisan key:generate --ansi"
         ],
         "build": [
-            "php artisan optimize",
-            "php artisan optimize:clear"
+            "php artisan optimize"
         ]
     },
     "extra": {

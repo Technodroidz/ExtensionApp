@@ -15,5 +15,5 @@ use App\Http\Controllers\API\RegisterController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-// #admin routes
+// #admin routes by vikash rai
 Route::post('saveurl', [RegisterController::class, 'saveURL']);
