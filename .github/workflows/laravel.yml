@@ -3,7 +3,10 @@ name: Laravel
 on:
   push:
     branches:
-      - main  
+      - main
+  release:
+    types: 
+      - created    
 
 jobs:
   build-and-test:
@@ -33,6 +36,7 @@ jobs:
       - name: Build package
         run: php artisan package:discover && composer build
         working-directory: ./WebAndApiExt
+
       - name: Publish package
         uses: softprops/action-gh-release@v1
         with:
@@ -42,30 +46,33 @@ jobs:
           draft: false
           prerelease: false
           token: ${{ secrets.PAT }} 
-          
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+
+      - name: Checkout code again
+        uses: actions/checkout@v2
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.1.5
         with:
           node-version: 16
+          
       - name: Install dependencies
         run: npm install
         working-directory: ./WebAndApiExt
 
   publish-gpr:
-      needs: build-and-test
-      runs-on: ubuntu-latest
-      permissions:
-        packages: write
-        contents: read
-      steps:
-        - uses: actions/checkout@v3
-        - uses: actions/setup-node@v3
-          with:
-            node-version: 16
-            registry-url: https://npm.pkg.github.com/
-        - run: npm publish
-          working-directory: ./WebAndApiExt
-      env:
-          NODE_AUTH_TOKEN: ${{secrets.PAT}}      
-    
-          
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 16
+          registry-url: https://npm.pkg.github.com/
+          scope: '@your-org-name'
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.PAT }}
+        working-directory: ./WebAndApiExt
