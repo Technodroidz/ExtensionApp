@@ -35,6 +35,7 @@ jobs:
           
       - name: Build package
         run: php artisan package:discover && composer build
+        working-directory: ./WebAndApiExt
       - name: Publish package
         uses: softprops/action-gh-release@v1
         with:
