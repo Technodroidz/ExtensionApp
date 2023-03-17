@@ -21,5 +21,11 @@
     "dependencies": {
         "laravel-echo": "^1.12.0",
         "pusher-js": "^7.1.1-beta"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/",
+        "access": "public",
+        "tag": "latest"
     }
 }
+  
