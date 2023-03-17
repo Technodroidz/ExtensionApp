@@ -26,6 +26,11 @@
         "registry": "https://npm.pkg.github.com/",
         "access": "public",
         "tag": "latest"
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Technodroidz/ExtensionApp"
+      }
+      
 }
   
