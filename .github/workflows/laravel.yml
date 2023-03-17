@@ -49,20 +49,13 @@ jobs:
       packages: write
       contents: read
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v2.1.1
+      - uses: actions/setup-node@v1.4.2
         with:
           node-version: 16
-          registry-url: https://npm.pkg.github.com/
-      - name: Authenticate with npm
-        uses: actions/npm@v2
-        with:
-          registry-url: https://npm.pkg.github.com
-          scope: '@phanatic'
-          auth-token: ${{ secrets.PAT }}
-          working-directory: ./WebAndApiExt
+          registry-url: https://registry.npmjs.org
       - name: Publish package
         run: npm publish --access public
         working-directory: ./WebAndApiExt
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.PAT }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM }}
