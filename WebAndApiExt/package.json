@@ -2,7 +2,7 @@
     "name": "extapp-package",
     "version": "1.0.0",
     "description": "Extension App",
-    "author": "Vikash Rai",
+    "author": "Technodroidz",
     "private": false,
     "scripts": {
         "dev": "npm run development",
