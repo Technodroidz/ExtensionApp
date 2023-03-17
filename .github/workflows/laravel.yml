@@ -55,7 +55,7 @@ jobs:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
       - name: Authenticate with npm
-        uses: actions/npm@v1
+        uses: docker://ghcr.io/github/actions/npm@v1
         with:
           registry-url: https://npm.pkg.github.com
           scope: '@phanatic'
