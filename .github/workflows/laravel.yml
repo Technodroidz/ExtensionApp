@@ -53,13 +53,10 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
-          registry-url: https://registry.npmjs.org
+          registry-url: https://npm.pkg.github.com/
       - name: Authenticate with npm
-        uses: actions/npm@v1
-        with:
-          registry-url: https://registry.npmjs.org
-          scope: '@phanatic'
-          auth-token: ${{ secrets.NPM }}    
+        run: echo "//npm.pkg.github.com/:_authToken=${{secrets.NPM}}" >> ~/.npmrc
+        working-directory: ./WebAndApiExt
       - name: Publish package
         run: npm publish --access public
         working-directory: ./WebAndApiExt
