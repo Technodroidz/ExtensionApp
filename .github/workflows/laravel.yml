@@ -60,6 +60,7 @@ jobs:
           registry-url: https://npm.pkg.github.com
           scope: '@phanatic'
           auth-token: ${{ secrets.PAT }}
+          working-directory: ./WebAndApiExt
       - name: Publish package
         run: npm publish --access public
         working-directory: ./WebAndApiExt
