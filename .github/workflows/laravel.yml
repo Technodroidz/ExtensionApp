@@ -54,6 +54,12 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org
+      - name: Authenticate with npm
+        uses: actions/npm@v1
+        with:
+          registry-url: https://registry.npmjs.org
+          scope: '@phanatic'
+          auth-token: ${{ secrets.NPM }}    
       - name: Publish package
         run: npm publish --access public
         working-directory: ./WebAndApiExt
