@@ -33,35 +33,21 @@ jobs:
           prerelease: false
           token: ${{ secrets.PAT }} 
 
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 16
-            
-      - name: Install dependencies
-        run: npm install
-        working-directory: ./WebAndApiExt
-
   publish-gpr:
-    needs: build-and-test
     runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 16
-          registry-url: https://registry.npmjs.org
-      - name: Authenticate with npm
-        uses: actions/npm@v1
-        with:
-          registry-url: https://registry.npmjs.org
-          scope: '@phanatic'
-          auth-token: ${{ secrets.NPM }}    
-      - name: Publish package
-        run: npm publish --access public
-        working-directory: ./WebAndApiExt
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM }}
+      - name: Install dependencies
+        run: composer install --no-dev
+      - name: Create package directory
+        run: mkdir my-package
+      - name: Build and publish package
+        run: |
+          php artisan package:discover
+          tar -czvf my-package.tar.gz my-package
+          curl -v \
+            -X PUT \
+            -H "Content-Type: application/octet-stream" \
+            -H "Authorization: Bearer ${{ secrets.PAT }}" \
+            --data-binary @my-package.tar.gz \
+            "https://uploads.github.com/repos/${{ github.repository }}/packages/my-package/${{ github.sha }}/my-package.tar.gz"
