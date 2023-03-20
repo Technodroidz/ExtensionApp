@@ -33,3 +33,12 @@ jobs:
           path: |
             dist/*.zip
             dist/*.crx
+      - name: Publish package
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ github.event.release.tag_name }}
+          release_name: Release ${{ github.event.release.tag_name }}
+          body: ${{ github.event.release.body }}
+          draft: false
+          prerelease: false
+          token: ${{ secrets.PAT }}        
