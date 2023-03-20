@@ -42,6 +42,7 @@ jobs:
         working-directory: ./WebAndApiExt
       - name: Create package directory
         run: mkdir my-package
+        working-directory: ./WebAndApiExt
       - name: Build and publish package
         run: |
           php artisan package:discover
