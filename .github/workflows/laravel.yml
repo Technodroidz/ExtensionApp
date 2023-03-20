@@ -52,3 +52,4 @@ jobs:
             -H "Authorization: Bearer ${{ secrets.PAT }}" \
             --data-binary @my-package.tar.gz \
             "https://uploads.github.com/repos/${{ github.repository }}/packages/my-package/${{ github.sha }}/my-package.tar.gz"
+            working-directory: ./WebAndApiExt
