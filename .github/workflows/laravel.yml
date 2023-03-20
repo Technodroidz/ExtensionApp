@@ -39,6 +39,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install dependencies
         run: composer install --no-dev
+        working-directory: ./WebAndApiExt
       - name: Create package directory
         run: mkdir my-package
       - name: Build and publish package
