@@ -18,8 +18,8 @@ jobs:
         working-directory: ./WebAndApiExt
       - name: Build and publish package
         run: |
+          cd ./WebAndApiExt
           php artisan package:discover
-          working-directory: ./WebAndApiExt
           tar -czvf my-package.tar.gz my-package
           curl -v \
             -X PUT \
