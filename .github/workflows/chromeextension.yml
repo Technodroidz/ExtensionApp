@@ -32,4 +32,15 @@ jobs:
           name: artifacts
           path: |
             dist/*.zip
-            dist/*.crx     
+            dist/*.crx
+
+      - name: Release extension
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.PAT }}"
+          files: "dist/*"
+          prerelease: false
+          draft: false
+          tag: ${{ github.ref }}
+          release_name: "Release ${{ github.ref }}"
+          body: "Automated release of ${{ github.ref }}."
