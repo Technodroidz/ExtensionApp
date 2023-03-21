@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main       
 
 jobs:
   build-and-test:
@@ -25,3 +28,15 @@ jobs:
         with:
           name: artifacts
           path: build/*.safariextz
+          
+      - name: Release extension
+        uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: ${{ secrets.PAT }}
+          files: dist/*.safariextz
+          tag_name: safariext${{ github.event.release.tag_name }}
+          prerelease: false
+          draft: false
+          automatic_release_tag: false
+          release_name: "Release ${{ github.ref }}"
+          body: "Automated release of ${{ github.ref }}."
