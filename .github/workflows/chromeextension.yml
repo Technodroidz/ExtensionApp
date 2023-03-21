@@ -41,6 +41,6 @@ jobs:
           files: "dist/*"
           prerelease: false
           draft: false
-          tag: ${{ github.ref }}
+          automatic_release_tag: false
           release_name: "Release ${{ github.ref }}"
           body: "Automated release of ${{ github.ref }}."
