@@ -27,7 +27,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: artifacts
-          path: build/*.safariextz
+          path: dist/*.safariextz
           
       - name: Release extension
         uses: marvinpinto/action-automatic-releases@latest
