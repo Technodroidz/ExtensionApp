@@ -38,5 +38,5 @@ jobs:
           prerelease: false
           draft: false
           automatic_release_tag: false
-          release_name: "Release ${{ github.ref }}"
+          release_name: "New Release"
           body: "Automated release of ${{ github.ref }}."
