@@ -1,0 +1,982 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0821920A298A48CC00FF5EFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08219209298A48CC00FF5EFF /* AppDelegate.swift */; };
+		0821920C298A48CC00FF5EFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0821920B298A48CC00FF5EFF /* SceneDelegate.swift */; };
+		0821920F298A48CC00FF5EFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0821920D298A48CC00FF5EFF /* LaunchScreen.storyboard */; };
+		08219212298A48CC00FF5EFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08219210298A48CC00FF5EFF /* Main.storyboard */; };
+		0821921B298A48CC00FF5EFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0821921A298A48CC00FF5EFF /* AppDelegate.swift */; };
+		0821921E298A48CC00FF5EFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0821921C298A48CC00FF5EFF /* Main.storyboard */; };
+		08219225298A48CC00FF5EFF /* extApp Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 08219224298A48CC00FF5EFF /* extApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0821922F298A48CC00FF5EFF /* extApp Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0821922E298A48CC00FF5EFF /* extApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		08219235298A48CC00FF5EFF /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 082191F0298A48C800FF5EFF /* Main.html */; };
+		08219236298A48CC00FF5EFF /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 082191F0298A48C800FF5EFF /* Main.html */; };
+		08219237298A48CC00FF5EFF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 082191F2298A48C800FF5EFF /* Icon.png */; };
+		08219238298A48CC00FF5EFF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 082191F2298A48C800FF5EFF /* Icon.png */; };
+		08219239298A48CC00FF5EFF /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 082191F3298A48C800FF5EFF /* Style.css */; };
+		0821923A298A48CC00FF5EFF /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 082191F3298A48C800FF5EFF /* Style.css */; };
+		0821923B298A48CC00FF5EFF /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 082191F4298A48C800FF5EFF /* Script.js */; };
+		0821923C298A48CC00FF5EFF /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 082191F4298A48C800FF5EFF /* Script.js */; };
+		0821923D298A48CC00FF5EFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082191F5298A48C800FF5EFF /* ViewController.swift */; };
+		0821923E298A48CC00FF5EFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082191F5298A48C800FF5EFF /* ViewController.swift */; };
+		0821923F298A48CC00FF5EFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 082191F6298A48CC00FF5EFF /* Assets.xcassets */; };
+		08219240298A48CC00FF5EFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 082191F6298A48CC00FF5EFF /* Assets.xcassets */; };
+		08219241298A48CC00FF5EFF /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082191F8298A48CC00FF5EFF /* SafariWebExtensionHandler.swift */; };
+		08219242298A48CC00FF5EFF /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082191F8298A48CC00FF5EFF /* SafariWebExtensionHandler.swift */; };
+		08219243298A48CC00FF5EFF /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 082191FA298A48CC00FF5EFF /* _locales */; };
+		08219244298A48CC00FF5EFF /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 082191FA298A48CC00FF5EFF /* _locales */; };
+		08219245298A48CC00FF5EFF /* images in Resources */ = {isa = PBXBuildFile; fileRef = 082191FB298A48CC00FF5EFF /* images */; };
+		08219246298A48CC00FF5EFF /* images in Resources */ = {isa = PBXBuildFile; fileRef = 082191FB298A48CC00FF5EFF /* images */; };
+		08219247298A48CC00FF5EFF /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 082191FC298A48CC00FF5EFF /* manifest.json */; };
+		08219248298A48CC00FF5EFF /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 082191FC298A48CC00FF5EFF /* manifest.json */; };
+		08219249298A48CC00FF5EFF /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 082191FD298A48CC00FF5EFF /* background.js */; };
+		0821924A298A48CC00FF5EFF /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 082191FD298A48CC00FF5EFF /* background.js */; };
+		0821924B298A48CC00FF5EFF /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 082191FE298A48CC00FF5EFF /* content.js */; };
+		0821924C298A48CC00FF5EFF /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 082191FE298A48CC00FF5EFF /* content.js */; };
+		0821924D298A48CC00FF5EFF /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 082191FF298A48CC00FF5EFF /* popup.html */; };
+		0821924E298A48CC00FF5EFF /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 082191FF298A48CC00FF5EFF /* popup.html */; };
+		0821924F298A48CC00FF5EFF /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 08219200298A48CC00FF5EFF /* popup.css */; };
+		08219250298A48CC00FF5EFF /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 08219200298A48CC00FF5EFF /* popup.css */; };
+		08219251298A48CC00FF5EFF /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 08219201298A48CC00FF5EFF /* popup.js */; };
+		08219252298A48CC00FF5EFF /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 08219201298A48CC00FF5EFF /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08219226298A48CC00FF5EFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 082191EA298A48C800FF5EFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08219223298A48CC00FF5EFF;
+			remoteInfo = "extApp Extension (iOS)";
+		};
+		08219230298A48CC00FF5EFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 082191EA298A48C800FF5EFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0821922D298A48CC00FF5EFF;
+			remoteInfo = "extApp Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		08219258298A48CC00FF5EFF /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				08219225298A48CC00FF5EFF /* extApp Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0821925F298A48CC00FF5EFF /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0821922F298A48CC00FF5EFF /* extApp Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		082191F1298A48C800FF5EFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		082191F2298A48C800FF5EFF /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		082191F3298A48C800FF5EFF /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		082191F4298A48C800FF5EFF /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		082191F5298A48C800FF5EFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		082191F6298A48CC00FF5EFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		082191F8298A48CC00FF5EFF /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		082191FA298A48CC00FF5EFF /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		082191FB298A48CC00FF5EFF /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		082191FC298A48CC00FF5EFF /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		082191FD298A48CC00FF5EFF /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		082191FE298A48CC00FF5EFF /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		082191FF298A48CC00FF5EFF /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		08219200298A48CC00FF5EFF /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		08219201298A48CC00FF5EFF /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		08219206298A48CC00FF5EFF /* extApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = extApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08219209298A48CC00FF5EFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0821920B298A48CC00FF5EFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0821920E298A48CC00FF5EFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08219211298A48CC00FF5EFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08219213298A48CC00FF5EFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08219218298A48CC00FF5EFF /* extApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = extApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0821921A298A48CC00FF5EFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0821921D298A48CC00FF5EFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0821921F298A48CC00FF5EFF /* extApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = extApp.entitlements; sourceTree = "<group>"; };
+		08219224298A48CC00FF5EFF /* extApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "extApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08219229298A48CC00FF5EFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0821922E298A48CC00FF5EFF /* extApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "extApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08219233298A48CC00FF5EFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08219234298A48CC00FF5EFF /* extApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = extApp.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08219203298A48CC00FF5EFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08219215298A48CC00FF5EFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08219221298A48CC00FF5EFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0821922B298A48CC00FF5EFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		082191E9298A48C800FF5EFF = {
+			isa = PBXGroup;
+			children = (
+				082191EE298A48C800FF5EFF /* Shared (App) */,
+				082191F7298A48CC00FF5EFF /* Shared (Extension) */,
+				08219208298A48CC00FF5EFF /* iOS (App) */,
+				08219219298A48CC00FF5EFF /* macOS (App) */,
+				08219228298A48CC00FF5EFF /* iOS (Extension) */,
+				08219232298A48CC00FF5EFF /* macOS (Extension) */,
+				08219207298A48CC00FF5EFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		082191EE298A48C800FF5EFF /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				082191F5298A48C800FF5EFF /* ViewController.swift */,
+				082191F6298A48CC00FF5EFF /* Assets.xcassets */,
+				082191EF298A48C800FF5EFF /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		082191EF298A48C800FF5EFF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				082191F0298A48C800FF5EFF /* Main.html */,
+				082191F2298A48C800FF5EFF /* Icon.png */,
+				082191F3298A48C800FF5EFF /* Style.css */,
+				082191F4298A48C800FF5EFF /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		082191F7298A48CC00FF5EFF /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				082191F8298A48CC00FF5EFF /* SafariWebExtensionHandler.swift */,
+				082191F9298A48CC00FF5EFF /* Resources */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		082191F9298A48CC00FF5EFF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				082191FA298A48CC00FF5EFF /* _locales */,
+				082191FB298A48CC00FF5EFF /* images */,
+				082191FC298A48CC00FF5EFF /* manifest.json */,
+				082191FD298A48CC00FF5EFF /* background.js */,
+				082191FE298A48CC00FF5EFF /* content.js */,
+				082191FF298A48CC00FF5EFF /* popup.html */,
+				08219200298A48CC00FF5EFF /* popup.css */,
+				08219201298A48CC00FF5EFF /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		08219207298A48CC00FF5EFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08219206298A48CC00FF5EFF /* extApp.app */,
+				08219218298A48CC00FF5EFF /* extApp.app */,
+				08219224298A48CC00FF5EFF /* extApp Extension.appex */,
+				0821922E298A48CC00FF5EFF /* extApp Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08219208298A48CC00FF5EFF /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				08219209298A48CC00FF5EFF /* AppDelegate.swift */,
+				0821920B298A48CC00FF5EFF /* SceneDelegate.swift */,
+				0821920D298A48CC00FF5EFF /* LaunchScreen.storyboard */,
+				08219210298A48CC00FF5EFF /* Main.storyboard */,
+				08219213298A48CC00FF5EFF /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		08219219298A48CC00FF5EFF /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				0821921A298A48CC00FF5EFF /* AppDelegate.swift */,
+				0821921C298A48CC00FF5EFF /* Main.storyboard */,
+				0821921F298A48CC00FF5EFF /* extApp.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		08219228298A48CC00FF5EFF /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				08219229298A48CC00FF5EFF /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		08219232298A48CC00FF5EFF /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				08219233298A48CC00FF5EFF /* Info.plist */,
+				08219234298A48CC00FF5EFF /* extApp.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08219205298A48CC00FF5EFF /* extApp (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08219259298A48CC00FF5EFF /* Build configuration list for PBXNativeTarget "extApp (iOS)" */;
+			buildPhases = (
+				08219202298A48CC00FF5EFF /* Sources */,
+				08219203298A48CC00FF5EFF /* Frameworks */,
+				08219204298A48CC00FF5EFF /* Resources */,
+				08219258298A48CC00FF5EFF /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08219227298A48CC00FF5EFF /* PBXTargetDependency */,
+			);
+			name = "extApp (iOS)";
+			productName = "extApp (iOS)";
+			productReference = 08219206298A48CC00FF5EFF /* extApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08219217298A48CC00FF5EFF /* extApp (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08219260298A48CC00FF5EFF /* Build configuration list for PBXNativeTarget "extApp (macOS)" */;
+			buildPhases = (
+				08219214298A48CC00FF5EFF /* Sources */,
+				08219215298A48CC00FF5EFF /* Frameworks */,
+				08219216298A48CC00FF5EFF /* Resources */,
+				0821925F298A48CC00FF5EFF /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08219231298A48CC00FF5EFF /* PBXTargetDependency */,
+			);
+			name = "extApp (macOS)";
+			productName = "extApp (macOS)";
+			productReference = 08219218298A48CC00FF5EFF /* extApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08219223298A48CC00FF5EFF /* extApp Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08219255298A48CC00FF5EFF /* Build configuration list for PBXNativeTarget "extApp Extension (iOS)" */;
+			buildPhases = (
+				08219220298A48CC00FF5EFF /* Sources */,
+				08219221298A48CC00FF5EFF /* Frameworks */,
+				08219222298A48CC00FF5EFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "extApp Extension (iOS)";
+			productName = "extApp Extension (iOS)";
+			productReference = 08219224298A48CC00FF5EFF /* extApp Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		0821922D298A48CC00FF5EFF /* extApp Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0821925C298A48CC00FF5EFF /* Build configuration list for PBXNativeTarget "extApp Extension (macOS)" */;
+			buildPhases = (
+				0821922A298A48CC00FF5EFF /* Sources */,
+				0821922B298A48CC00FF5EFF /* Frameworks */,
+				0821922C298A48CC00FF5EFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "extApp Extension (macOS)";
+			productName = "extApp Extension (macOS)";
+			productReference = 0821922E298A48CC00FF5EFF /* extApp Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		082191EA298A48C800FF5EFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					08219205298A48CC00FF5EFF = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					08219217298A48CC00FF5EFF = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					08219223298A48CC00FF5EFF = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					0821922D298A48CC00FF5EFF = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 082191ED298A48C800FF5EFF /* Build configuration list for PBXProject "extApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 082191E9298A48C800FF5EFF;
+			productRefGroup = 08219207298A48CC00FF5EFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08219205298A48CC00FF5EFF /* extApp (iOS) */,
+				08219217298A48CC00FF5EFF /* extApp (macOS) */,
+				08219223298A48CC00FF5EFF /* extApp Extension (iOS) */,
+				0821922D298A48CC00FF5EFF /* extApp Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08219204298A48CC00FF5EFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08219237298A48CC00FF5EFF /* Icon.png in Resources */,
+				0821920F298A48CC00FF5EFF /* LaunchScreen.storyboard in Resources */,
+				08219235298A48CC00FF5EFF /* Main.html in Resources */,
+				0821923B298A48CC00FF5EFF /* Script.js in Resources */,
+				0821923F298A48CC00FF5EFF /* Assets.xcassets in Resources */,
+				08219212298A48CC00FF5EFF /* Main.storyboard in Resources */,
+				08219239298A48CC00FF5EFF /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08219216298A48CC00FF5EFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08219238298A48CC00FF5EFF /* Icon.png in Resources */,
+				0821923A298A48CC00FF5EFF /* Style.css in Resources */,
+				0821921E298A48CC00FF5EFF /* Main.storyboard in Resources */,
+				0821923C298A48CC00FF5EFF /* Script.js in Resources */,
+				08219240298A48CC00FF5EFF /* Assets.xcassets in Resources */,
+				08219236298A48CC00FF5EFF /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08219222298A48CC00FF5EFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08219249298A48CC00FF5EFF /* background.js in Resources */,
+				0821924F298A48CC00FF5EFF /* popup.css in Resources */,
+				0821924D298A48CC00FF5EFF /* popup.html in Resources */,
+				08219245298A48CC00FF5EFF /* images in Resources */,
+				08219247298A48CC00FF5EFF /* manifest.json in Resources */,
+				08219243298A48CC00FF5EFF /* _locales in Resources */,
+				0821924B298A48CC00FF5EFF /* content.js in Resources */,
+				08219251298A48CC00FF5EFF /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0821922C298A48CC00FF5EFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0821924A298A48CC00FF5EFF /* background.js in Resources */,
+				08219250298A48CC00FF5EFF /* popup.css in Resources */,
+				0821924E298A48CC00FF5EFF /* popup.html in Resources */,
+				08219246298A48CC00FF5EFF /* images in Resources */,
+				08219248298A48CC00FF5EFF /* manifest.json in Resources */,
+				08219244298A48CC00FF5EFF /* _locales in Resources */,
+				0821924C298A48CC00FF5EFF /* content.js in Resources */,
+				08219252298A48CC00FF5EFF /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08219202298A48CC00FF5EFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0821923D298A48CC00FF5EFF /* ViewController.swift in Sources */,
+				0821920A298A48CC00FF5EFF /* AppDelegate.swift in Sources */,
+				0821920C298A48CC00FF5EFF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08219214298A48CC00FF5EFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0821923E298A48CC00FF5EFF /* ViewController.swift in Sources */,
+				0821921B298A48CC00FF5EFF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08219220298A48CC00FF5EFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08219241298A48CC00FF5EFF /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0821922A298A48CC00FF5EFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08219242298A48CC00FF5EFF /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08219227298A48CC00FF5EFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08219223298A48CC00FF5EFF /* extApp Extension (iOS) */;
+			targetProxy = 08219226298A48CC00FF5EFF /* PBXContainerItemProxy */;
+		};
+		08219231298A48CC00FF5EFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0821922D298A48CC00FF5EFF /* extApp Extension (macOS) */;
+			targetProxy = 08219230298A48CC00FF5EFF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		082191F0298A48C800FF5EFF /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				082191F1298A48C800FF5EFF /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		0821920D298A48CC00FF5EFF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0821920E298A48CC00FF5EFF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		08219210298A48CC00FF5EFF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08219211298A48CC00FF5EFF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0821921C298A48CC00FF5EFF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0821921D298A48CC00FF5EFF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08219253298A48CC00FF5EFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08219254298A48CC00FF5EFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		08219256298A48CC00FF5EFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D834Y5V53N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "extApp Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Newsd.com.extApp.Extension;
+				PRODUCT_NAME = "extApp Extension";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08219257298A48CC00FF5EFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D834Y5V53N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "extApp Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Newsd.com.extApp.Extension;
+				PRODUCT_NAME = "extApp Extension";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0821925A298A48CC00FF5EFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D834Y5V53N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = History;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Newsd.com.extApp;
+				PRODUCT_NAME = extApp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0821925B298A48CC00FF5EFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D834Y5V53N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = History;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Newsd.com.extApp;
+				PRODUCT_NAME = extApp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0821925D298A48CC00FF5EFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/extApp.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D834Y5V53N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "extApp Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Newsd.com.extApp.Extension;
+				PRODUCT_NAME = "extApp Extension";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0821925E298A48CC00FF5EFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/extApp.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D834Y5V53N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "extApp Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Newsd.com.extApp.Extension;
+				PRODUCT_NAME = "extApp Extension";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		08219261298A48CC00FF5EFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/extApp.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D834Y5V53N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = extApp;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Newsd.com.extApp;
+				PRODUCT_NAME = extApp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		08219262298A48CC00FF5EFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/extApp.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D834Y5V53N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = extApp;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Newsd.com.extApp;
+				PRODUCT_NAME = extApp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		082191ED298A48C800FF5EFF /* Build configuration list for PBXProject "extApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08219253298A48CC00FF5EFF /* Debug */,
+				08219254298A48CC00FF5EFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08219255298A48CC00FF5EFF /* Build configuration list for PBXNativeTarget "extApp Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08219256298A48CC00FF5EFF /* Debug */,
+				08219257298A48CC00FF5EFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08219259298A48CC00FF5EFF /* Build configuration list for PBXNativeTarget "extApp (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0821925A298A48CC00FF5EFF /* Debug */,
+				0821925B298A48CC00FF5EFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0821925C298A48CC00FF5EFF /* Build configuration list for PBXNativeTarget "extApp Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0821925D298A48CC00FF5EFF /* Debug */,
+				0821925E298A48CC00FF5EFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08219260298A48CC00FF5EFF /* Build configuration list for PBXNativeTarget "extApp (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08219261298A48CC00FF5EFF /* Debug */,
+				08219262298A48CC00FF5EFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 082191EA298A48C800FF5EFF /* Project object */;
+}
