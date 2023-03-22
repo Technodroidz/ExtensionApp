@@ -4,7 +4,7 @@ Extension App Webpage
 
 #technology used :
 1 frontend : html 5 and css
-2 backend : Laravel 
+2 backend : Laravel 8.0
 3 Database : Firebase cloud
 
 Details : 
