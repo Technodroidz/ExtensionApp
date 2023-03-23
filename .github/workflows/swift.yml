@@ -44,11 +44,6 @@ jobs:
         run: gem install bundler
         working-directory: ./SafariExtApp
 
-
-      - name: Build artifacts
-        run: bundle exec rake build
-        working-directory: ./SafariExtApp
-
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
