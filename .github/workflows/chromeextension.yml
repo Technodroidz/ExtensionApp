@@ -47,25 +47,27 @@ jobs:
         run: npm install
         working-directory: ChromeExtApp
 
+      - name: Build extension
+        run: npm run build
+        working-directory: ChromeExtApp
+
       - name: Archive extension
         uses: actions/upload-artifact@v2
         with:
           name: extension
-          path: dist
+          path: ChromeExtApp/dist
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
           name: artifacts
-          path: |
-            dist/*.zip
-            dist/*.crx 
+          path: ChromeExtApp/dist/*.zip
 
       - name: Release extension
         uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.PAT }}"
-          files: "dist/*"
+          files: "ChromeExtApp/dist/*.zip"
           tag_name: ${{ github.ref }}
           prerelease: false
           draft: false
@@ -90,16 +92,18 @@ jobs:
         run: npm install
         working-directory: ChromeExtApp
 
+      - name: Build extension
+        run: npm run build
+        working-directory: ChromeExtApp
+
       - name: Archive extension
         uses: actions/upload-artifact@v2
         with:
           name: extension
-          path: dist
+          path: ChromeExtApp/dist
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
           name: artifacts
-          path: |
-            dist/*.zip
-            dist/*.crx
+          path: ChromeExtApp/dist/*.zip
