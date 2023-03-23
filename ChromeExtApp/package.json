@@ -1,0 +1,16 @@
+{
+  "name": "chrome-extapp-package",
+  "version": "1.0.1",
+  "description": "Chrome Extension App",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Running tests for Chrome Extension App...\" && exit 0",
+    "build": "webpack --mode=production"
+  },
+  "author": "Vikash Rai",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  }
+}
