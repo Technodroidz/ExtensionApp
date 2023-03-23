@@ -1,0 +1,11 @@
+{
+  "name": "chrome-extapp-package",
+  "version": "1.0.1",
+  "description": "Chrome Extension App",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Running tests for Chrome Extension App...\" && exit 0"
+  },
+  "author": "Technodroidz",
+  "license": "ISC"
+}
