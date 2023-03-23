@@ -23,9 +23,11 @@ jobs:
           ruby-version: '2.7'
 
       - name: Install Bundler
-        run: gem install bundler
+        run: |
+             gem install bundler
              bundle install
         working-directory: ./SafariExtApp
+
 
       - name: Run tests
         run: bundle exec rspec
@@ -45,9 +47,11 @@ jobs:
           ruby-version: '2.7'
 
       - name: Install Bundler
-        run: gem install bundler
-             bundle install
+        run: |
+           gem install bundler
+           bundle install
         working-directory: ./SafariExtApp
+
 
       - name: Build artifacts
         run: bundle exec rake build
