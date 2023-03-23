@@ -23,9 +23,7 @@ jobs:
           ruby-version: '2.7'
 
       - name: Install Bundler
-        run: |
-             gem install bundler
-             bundle install
+        run: gem install bundler
         working-directory: ./SafariExtApp
 
 
@@ -47,9 +45,7 @@ jobs:
           ruby-version: '2.7'
 
       - name: Install Bundler
-        run: |
-           gem install bundler
-           bundle install
+        run: gem install bundler
         working-directory: ./SafariExtApp
 
 
