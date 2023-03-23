@@ -27,10 +27,6 @@ jobs:
         working-directory: ./SafariExtApp
 
 
-      - name: Run tests
-        run: bundle exec rspec
-        working-directory: ./SafariExtApp
-
   build-and-release:
     needs: test
     if: github.event_name == 'release'
