@@ -62,6 +62,9 @@
         ],
         "build": [
             "php artisan optimize"
+        ],
+        "test": [
+            "php artisan test"
         ]
     },
     "extra": {
