@@ -62,7 +62,7 @@ jobs:
             dist/*.crx 
 
       - name: Release extension
-        uses: "marvinpinto/action-automatic-releases@latest"
+        uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.PAT }}"
           files: "dist/*"
