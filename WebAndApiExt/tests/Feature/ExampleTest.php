@@ -14,8 +14,8 @@ class ExampleTest extends TestCase
      */
     public function test_example()
     {
-        $response = $this->get('/');
+        $response = $this->get('/non-existing-url');
 
-        $response->assertStatus(200);
+        $response->assertStatus(404);
     }
 }
