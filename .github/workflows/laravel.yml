@@ -32,7 +32,7 @@ jobs:
 
       # Publish artifacts on release events
       - name: Publish package
-        if: github.event_name == 'release'
+        if: github.event_name == 'release' || github.event_name == 'push'
         uses: softprops/action-gh-release@v1
         with:
           tag_name: v${{ github.event.release.tag_name }}
