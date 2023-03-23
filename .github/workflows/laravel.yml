@@ -6,7 +6,9 @@ on:
       - main  
   pull_request:
     branches:
-      - main    
+      - main
+  release:
+    types: [created]
 
 jobs:
   build-and-test:
@@ -20,13 +22,13 @@ jobs:
 
       - name: Install dependencies
         run: composer install
-        working-directory: ./WebAndApiExt
+        working-directory: WebAndApiExt
 
       # Only build artifacts on push events
       - name: Build package
         if: github.event_name == 'push'
         run: php artisan package:discover && composer build
-        working-directory: ./WebAndApiExt
+        working-directory: WebAndApiExt
 
       # Publish artifacts on release events
       - name: Publish package
@@ -38,8 +40,13 @@ jobs:
           body: ${{ github.event.release.body }}
           draft: false
           prerelease: false
+          files: |
+            WebAndApiExt/vendor
+            WebAndApiExt/config
+            WebAndApiExt/database
+            WebAndApiExt/public
           token: ${{ secrets.PAT }} 
-
+          
   # Separate job for running tests
   test:
     runs-on: ubuntu-latest
@@ -52,10 +59,10 @@ jobs:
 
       - name: Install dependencies
         run: composer install
-        working-directory: ./WebAndApiExt
+        working-directory: WebAndApiExt
 
       # Only run tests on pull requests or merge to main
       - name: Run tests
         if: github.event.pull_request || (github.event_name == 'push' && github.ref == 'refs/heads/main')
         run: composer test
-        working-directory: ./WebAndApiExt
+        working-directory: WebAndApiExt
