@@ -4,12 +4,14 @@ on:
   push:
     branches:
       - main
+    tags:
+      - '*'
   pull_request:
     branches:
       - main       
 
 jobs:
-  build-and-test:
+  test:
     runs-on: macOS-latest
     steps:
       - name: Checkout code
@@ -23,17 +25,41 @@ jobs:
       - name: Install Bundler
         run: gem install bundler
 
+      - name: Run tests
+        run: bundle exec rspec
+        working-directory: ./SafariExtApp
+
+  build-and-release:
+    needs: test
+    if: github.event_name == 'release'
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7'
+
+      - name: Install Bundler
+        run: gem install bundler
+
+      - name: Build artifacts
+        run: bundle exec rake build
+        working-directory: ./SafariExtApp
+
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
           name: artifacts
-          path: dist/*.safariextz
-          
+          path: ./SafariExtApp/dist/*.safariextz
+
       - name: Release extension
         uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: ${{ secrets.PAT }}
-          files: dist/*.safariextz
+          files: ./SafariExtApp/dist/*.safariextz
           tag_name: safariext${{ github.event.release.tag_name }}
           prerelease: false
           draft: false
