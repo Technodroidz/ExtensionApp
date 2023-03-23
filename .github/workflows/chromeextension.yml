@@ -63,13 +63,15 @@ jobs:
         uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.PAT }}"
-          files: "ChromeExtApp/dist/*.zip"
+          files: "ChromeExtApp/dist/*"
           tag_name: ${{ github.ref }}
           prerelease: false
           draft: false
           automatic_release_tag: false
           release_name: "New Release"
           body: "Automated release of ${{ github.ref }}."
+          overwrite: true
+          asset_upload_url: "https://uploads.github.com/repos/${{ github.repository }}/releases/${{ env.RELEASE_ID }}/assets{?name,label}"
 
   build-only:
     runs-on: ubuntu-latest
