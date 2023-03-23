@@ -24,6 +24,7 @@ jobs:
 
       - name: Install Bundler
         run: gem install bundler
+             bundle install
         working-directory: ./SafariExtApp
 
       - name: Run tests
@@ -45,6 +46,7 @@ jobs:
 
       - name: Install Bundler
         run: gem install bundler
+             bundle install
         working-directory: ./SafariExtApp
 
       - name: Build artifacts
