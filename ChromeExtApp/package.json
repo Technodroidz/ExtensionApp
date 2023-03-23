@@ -7,7 +7,7 @@
     "test": "echo \"Running tests for Chrome Extension App...\" && exit 0",
     "build": "webpack --mode=production"
   },
-  "author": "Technodroidz",
+  "author": "Vikash Rai",
   "license": "ISC",
   "dependencies": {
     "webpack": "^5.64.4",
