@@ -21,12 +21,16 @@ jobs:
       - name: Install dependencies
         run: composer install
         working-directory: ./WebAndApiExt
-          
+
+      # Only build artifacts on push events
       - name: Build package
+        if: github.event_name == 'push'
         run: php artisan package:discover && composer build
         working-directory: ./WebAndApiExt
 
+      # Publish artifacts on release events
       - name: Publish package
+        if: github.event_name == 'release'
         uses: softprops/action-gh-release@v1
         with:
           tag_name: v${{ github.event.release.tag_name }}
@@ -35,3 +39,23 @@ jobs:
           draft: false
           prerelease: false
           token: ${{ secrets.PAT }} 
+
+  # Separate job for running tests
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Copy .env
+        run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+
+      - name: Install dependencies
+        run: composer install
+        working-directory: ./WebAndApiExt
+
+      # Only run tests on pull requests or merge to main
+      - name: Run tests
+        if: github.event.pull_request || (github.event_name == 'push' && github.ref == 'refs/heads/main')
+        run: composer test
+        working-directory: ./WebAndApiExt
