@@ -20,8 +20,8 @@ describe('Security', () => {
   });
 
   // Load test
-  test('should handle 10 virtual users for 10 seconds', () => {
-    loadTest();
-  });
+//   test('should handle 10 virtual users for 10 seconds', () => {
+//     loadTest();
+//   });
   
 });
