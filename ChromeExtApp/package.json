@@ -4,7 +4,7 @@
   "description": "Chrome Extension App",
   "main": "script.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest test/test.js",
     "build": "webpack --mode=production"
   },
   "author": "Vikash Rai",
