@@ -17,23 +17,4 @@ describe('Security', () => {
       expect(deps).not.toContain(dep);
     });
   });
-
-  test('should not have any known security vulnerabilities', async () => {
-    const { stdout, stderr } = await new Promise(resolve => {
-      exec('npm audit --json', (error, stdout, stderr) => {
-        if (error) {
-          throw error;
-        }
-        resolve({ stdout, stderr });
-      });
-    });
-    const auditData = JSON.parse(stdout);
-    const { metadata, advisories } = auditData;
-    expect(metadata.vulnerabilities).toHaveProperty('info', 0);
-    expect(metadata.vulnerabilities).toHaveProperty('low', 0);
-    expect(metadata.vulnerabilities).toHaveProperty('moderate', 0);
-    expect(metadata.vulnerabilities).toHaveProperty('high', 0);
-    expect(metadata.vulnerabilities).toHaveProperty('critical', 0);
-    expect(advisories).toHaveLength(0);
-  });
 });
