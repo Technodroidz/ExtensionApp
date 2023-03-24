@@ -1,4 +1,4 @@
-import http from '../k6/http';
+import http from 'k6/http';
 import { check } from 'k6';
 export const options = {
     vus: 10, // number of virtual users
