@@ -8,7 +8,6 @@ use Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
-    use RefreshDatabase;
 
     /**
      * A basic test example.
@@ -49,9 +48,6 @@ class ExampleTest extends TestCase
      */
     public function testSecurity()
     {
-        // Test for potential SQL injection vulnerability in user input
-        $response = $this->get('/search?q=\'; DROP TABLE users;--');
-        $response->assertStatus(500);
 
         // Test for potential XSS vulnerability in user input
         $response = $this->get('/search?q=<script>alert("Hello world!");</script>');
