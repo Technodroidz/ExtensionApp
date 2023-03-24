@@ -1,5 +1,4 @@
 const { exec } = require('child_process');
-import http from 'k6/http';
 import { check } from 'k6';
 import { options, default as loadTest } from './load-test.js';
 

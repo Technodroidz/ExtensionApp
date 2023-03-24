@@ -4,7 +4,7 @@ export const options = {
   };
   
   export default function () {
-    const response = http.get('https://example.com');
+    const response = http.get('https://google.com');
     check(response, { 'status is 200': (r) => r.status === 200 });
   }
   
