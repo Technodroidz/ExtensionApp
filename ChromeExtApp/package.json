@@ -5,6 +5,7 @@
   "main": "script.js",
   "scripts": {
     "test": "jest test/test.js",
+    "load-test": "k6 run test/load-test.js",
     "build": "webpack --mode=production"
   },
   "author": "Vikash Rai",
@@ -14,6 +15,7 @@
     "webpack-cli": "^4.9.1"
   },
   "devDependencies": {
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "k6": "^0.0.0"
   }
 }
