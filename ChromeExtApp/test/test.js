@@ -1,6 +1,6 @@
 describe('Security', () => {
     test('should use HTTPS instead of HTTP', () => {
-      const manifest = require('..manifest.json');
+      const manifest = require('../manifest.json');
       const urls = Object.values(manifest.content_scripts[0].matches);
       urls.forEach(url => {
         expect(url.startsWith('https://')).toBe(true);
@@ -8,7 +8,7 @@ describe('Security', () => {
     });
   
     test('should not use any vulnerable dependencies', () => {
-      const packageJson = require('..package.json');
+      const packageJson = require('../package.json');
       const vulnerableDeps = [
         'lodash',
         'jquery',
