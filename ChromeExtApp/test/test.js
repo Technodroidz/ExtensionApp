@@ -1,3 +1,4 @@
+const { exec } = require('child_process');
 describe('Security', () => {
     test('should use HTTPS instead of HTTP', () => {
       const manifest = require('../manifest.json');
