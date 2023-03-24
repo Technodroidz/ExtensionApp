@@ -1,12 +1,12 @@
-const { exec } = require('child_process');
+const retire = require('retire');
+
 describe('Security', () => {
   test('should not use any vulnerable dependencies', () => {
-    const packageJson = require('../package.json');
-    const vulnerableDeps = ['lodash','request','moment'];  // add any other vulnerable dependencies here   
-    const deps = Object.keys(packageJson.dependencies);
-    vulnerableDeps.forEach(dep => {
-      expect(deps).not.toContain(dep);
+    const manifest = safari.extension.baseURI + 'manifest.json';
+    const content = safari.extension.secureSettings.content;
+
+    retire.scanNode(content, function (result) {
+      expect(result.length).toBe(0);
     });
   });
-  
 });
