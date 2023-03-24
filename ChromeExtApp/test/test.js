@@ -1,4 +1,7 @@
 const { exec } = require('child_process');
+import http from 'k6/http';
+import { check } from 'k6';
+import { options, default as loadTest } from './load-test.js';
 
 describe('Security', () => {
   test('should use HTTPS instead of HTTP', () => {
@@ -17,4 +20,10 @@ describe('Security', () => {
       expect(deps).not.toContain(dep);
     });
   });
+
+  // Load test
+  test('should handle 10 virtual users for 10 seconds', () => {
+    loadTest();
+  });
+  
 });
