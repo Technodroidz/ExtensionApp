@@ -1,5 +1,5 @@
 const { exec } = require('child_process');
-import { options, default as loadTest } from './load-test.js';
+// import { options, default as loadTest } from './load-test.js';
 
 describe('Security', () => {
   test('should use HTTPS instead of HTTP', () => {
