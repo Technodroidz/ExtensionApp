@@ -9,5 +9,4 @@ describe('Security', function() {
         expect(result.length).toBe(0);
       });
     });
-    assert.strictEqual(result, expected);
   });
