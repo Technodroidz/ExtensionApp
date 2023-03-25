@@ -1,5 +1,5 @@
 const assert = require('assert');
-const extension = require('path/to/extension');
+const extension = require('/');
 
 describe('Security', function() {
     test('should not use any vulnerable dependencies', () => {
