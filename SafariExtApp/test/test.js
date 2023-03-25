@@ -1,4 +1,7 @@
 const assert = require('assert');
+const jsdom = require('jsdom-global');
+
+jsdom();
 
 describe('Security', function() {
     test('should not use any vulnerable dependencies', () => {
