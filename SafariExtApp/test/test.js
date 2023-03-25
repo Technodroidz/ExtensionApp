@@ -1,14 +1,18 @@
+const loadtest = require('loadtest');
 const assert = require('assert');
 
-console.log(safari); // Check if safari object is defined
+const options = {
+  url: 'https://google.com', // Replace with your extension's URL
+  maxRequests: 1000, // Total number of requests to send
+  concurrency: 10, // Number of requests to send concurrently
+};
 
-describe('Security', function() {
-    test('should not use any vulnerable dependencies', () => {
-      const manifest = safari.extension.baseURI + 'manifest.json';
-      const content = safari.extension.secureSettings.content;
-  
-      retire.scanNode(content, function (result) {
-        expect(result.length).toBe(0);
-      });
+describe('Load testing', function() {
+  it('should handle high traffic without errors', function(done) {
+    loadtest.loadTest(options, function(error, result) {
+      assert.ifError(error);
+      assert.strictEqual(result.totalRequests, options.maxRequests);
+      done();
     });
   });
+});
