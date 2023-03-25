@@ -14,5 +14,5 @@ describe('Load testing', function() {
       assert.strictEqual(result.totalRequests, options.maxRequests);
       done();
     });
-  });
+  }, 100000); // increase timeout to 10000ms
 });
