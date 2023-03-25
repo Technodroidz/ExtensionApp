@@ -1,16 +1,11 @@
 const assert = require('assert');
-const jsdom = require('jsdom-global');
 
-// Call jsdom-global before running tests to mock the Safari environment
-jsdom();
+console.log(safari); // Check if safari object is defined
 
 describe('Security', function() {
     test('should not use any vulnerable dependencies', () => {
-      const manifest = './package.json'; // Update with the path to your manifest file
-      const xhr = new XMLHttpRequest();
-      xhr.open('GET', manifest, false);
-      xhr.send(null);
-      const content = JSON.parse(xhr.responseText);
+      const manifest = safari.extension.baseURI + 'manifest.json';
+      const content = safari.extension.secureSettings.content;
   
       retire.scanNode(content, function (result) {
         expect(result.length).toBe(0);
