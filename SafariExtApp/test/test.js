@@ -1,6 +1,11 @@
 const loadtest = require('loadtest');
 const assert = require('assert');
 const { app, BrowserWindow } = require('electron');
+const jsdom = require('jsdom');
+const { JSDOM } = jsdom;
+const dom = new JSDOM();
+global.document = dom.window.document;
+
 
 const options = {
   url: 'https://google.com', // Replace with your extension's URL
