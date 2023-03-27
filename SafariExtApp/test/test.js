@@ -1,5 +1,6 @@
 const loadtest = require('loadtest');
 const assert = require('assert');
+const { app, BrowserWindow } = require('electron');
 
 const options = {
   url: 'https://google.com', // Replace with your extension's URL
