@@ -16,3 +16,16 @@ describe('Load testing', function() {
     });
   }, 100000); // increase timeout to 10000ms
 });
+
+describe('Extension UI', function() {
+  it('should be visible and accessible from the toolbar or menu', function() {
+    // Check if the extension is visible and accessible
+    // from the toolbar or menu
+    const toolbarButton = document.querySelector('#toolbar-button');
+    const menuButton = document.querySelector('#menu-button');
+
+    // Assert that the extension is visible and accessible
+    assert.ok(toolbarButton || menuButton, 'Extension button not found in toolbar or menu');
+  });
+});
+
