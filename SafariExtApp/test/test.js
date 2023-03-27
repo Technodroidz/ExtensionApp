@@ -18,6 +18,13 @@ describe('Load testing', function() {
 });
 
 describe('Extension UI', function() {
+  beforeEach(() => {
+    document.body.innerHTML = `
+      <div id="toolbar-button">Extension toolbar button</div>
+      <div id="menu-button">Extension menu button</div>
+    `;
+  });
+
   it('should be visible and accessible from the toolbar or menu', function() {
     // Check if the extension is visible and accessible
     // from the toolbar or menu
@@ -29,3 +36,26 @@ describe('Extension UI', function() {
   });
 });
 
+// Use jest-environment-jsdom for the tests to be able to access the DOM API
+jest.setTimeout(10000);
+jest.mock('fs', () => require('memfs').fs);
+jest.mock('electron', () => ({
+  app: {
+    getPath: () => 'test/test.js'
+  }
+}));
+process.env.NODE_ENV = 'test';
+process.env.TEST = 'true';
+process.env.EXTENSION_ID = 'test-id';
+process.env.TEST_ENVIRONMENT = 'true';
+process.env.DEBUG = 'true';
+process.env.DISABLE_VIEWS_COLLECTION = 'true';
+process.env.DISABLE_ANALYTICS_COLLECTION = 'true';
+process.env.APP_SETTINGS = JSON.stringify({
+  enableTelemetry: false
+});
+process.env.APP_INSTALLATION_ID = 'test-installation-id';
+
+// Set the Jest environment to jsdom to emulate the browser environment
+// within Node.js
+process.env.JEST_ENV = 'jsdom';
