@@ -42,7 +42,7 @@ jobs:
 
   build-and-release:
     needs: test
-    if: github.event_name == 'release'
+    if: github.event_name == 'release' || github.event_name == 'push'
     runs-on: macOS-latest
     steps:
       - name: Checkout code
