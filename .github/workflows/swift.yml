@@ -80,4 +80,4 @@ jobs:
           title: safariext${{ github.event.release.tag_name }}-$(date +%s)
           prerelease: false
           draft: false
-          automatic_release_tag: "New Release"
+          automatic_release_tag: "Safari-New-Release"
