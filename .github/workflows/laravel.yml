@@ -35,12 +35,13 @@ jobs:
         if: github.event_name == 'release' || github.event_name == 'push'
         uses: softprops/action-gh-release@v1
         with:
-          title: ext${{ github.event.release.tag_name }}
-          automatic_release_tag: "Ext-New-Release"
+          tag_name: v${{ github.event.release.tag_name }}
+          release_name: "Ext-New-Release"
+          body: ${{ github.event.release.body }}
           draft: false
           prerelease: false
           files: "WebAndApiExt/dist/*"
-          repo_token: ${{ secrets.PAT }} 
+          token: ${{ secrets.PAT }} 
           
   # Separate job for running tests
   test:
