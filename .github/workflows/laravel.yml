@@ -40,11 +40,7 @@ jobs:
           body: ${{ github.event.release.body }}
           draft: false
           prerelease: false
-          files: |
-            ./WebAndApiExt/vendor
-            ./WebAndApiExt/config
-            ./WebAndApiExt/database
-            ./WebAndApiExt/public
+          files: "WebAndApiExt/dist/*"
           token: ${{ secrets.PAT }} 
           
   # Separate job for running tests
