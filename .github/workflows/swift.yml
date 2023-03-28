@@ -64,7 +64,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ChromeExtApp   
+        working-directory: ./SafariExtApp   
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
