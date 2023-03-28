@@ -12,7 +12,7 @@ on:
 
 jobs:
   test:
-    runs-on: macOS-latest
+    runs-on: macos-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -43,7 +43,7 @@ jobs:
   build-and-release:
     needs: test
     if: github.event_name == 'release' || github.event_name == 'pull_request'
-    runs-on: macOS-latest
+    runs-on: macos-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
