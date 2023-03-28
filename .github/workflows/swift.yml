@@ -70,13 +70,13 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: artifacts
-          path: ./SafariExtApp/dist/*.safariextz
+          path: ./SafariExtApp/dist/*.zip
 
       - name: Release extension
         uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: ${{ secrets.PAT }}
-          files: ./SafariExtApp/dist/*.safariextz
+          files: ./SafariExtApp/dist/*.zip
           tag_name: safariext${{ github.event.release.tag_name }}
           prerelease: false
           draft: false
