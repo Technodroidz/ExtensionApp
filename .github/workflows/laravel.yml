@@ -37,11 +37,10 @@ jobs:
         with:
           title: ext${{ github.event.release.tag_name }}
           automatic_release_tag: "Ext-New-Release"
-          body: ${{ github.event.release.body }}
           draft: false
           prerelease: false
           files: "WebAndApiExt/dist/*"
-          token: ${{ secrets.PAT }} 
+          repo_token: ${{ secrets.PAT }} 
           
   # Separate job for running tests
   test:
