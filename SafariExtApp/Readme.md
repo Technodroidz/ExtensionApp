@@ -11,3 +11,7 @@ Extension App Webpage
 
 Details : 
 It will track all the browsing history of users and save it to firebase realtime cloud database
+
+Instructions :
+Please add your base url in the content.js file, you find this file in below given location :
+"SafariExtApp->Shared(Extension)->Resources->content.js"

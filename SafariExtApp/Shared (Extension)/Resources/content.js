@@ -4,6 +4,7 @@ browser.runtime.sendMessage({ greeting: "hello" }).then((response) => {
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
 });
 
+const BASE_URL = 'https://www.younggeeks.co.in/ExtensionAppApi/api';
 setInterval(function() {
 
 let currentURL = window.location.href;
@@ -20,7 +21,7 @@ var requestOptions = {
   body: formdata,
   redirect: 'follow'
 };
-fetch("https://www.younggeeks.co.in/ExtensionAppApi/api/saveurl", requestOptions)
+fetch(`${BASE_URL}/saveurl`, requestOptions)
   .then(
          response => response.text()
        )
