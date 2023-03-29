@@ -1,16 +1,11 @@
-# Ignore node_modules directory
 node_modules/
 
-# Ignore logs directory
 logs/
 
-# Ignore editor files
 editor/
 
-# Ignore swap files
 *.swp
 
-# Ignore some common files and directories in Node.js projects
 .DS_Store
 .env
 .idea/
