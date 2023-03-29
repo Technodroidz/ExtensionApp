@@ -5,3 +5,6 @@
 3 Database : Firebase cloud
 
 Details : It will track all the browsing history of users and save it to firebase realtime cloud database
+
+Instructions :
+Please add your base url in the script.js file.
