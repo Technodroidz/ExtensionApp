@@ -9,3 +9,17 @@ Extension App Webpage
 
 Details : 
 It will track all the browsing history of users and save it to firebase realtime cloud database
+
+Instructions :
+Please fill below given data for your firebase integration to work in your env file.
+TYPE=
+PROJECT_ID=
+PRIVATE_KEY_ID=
+PRIVATE_KEY=
+CLIENT_EMAIL=
+CLIENT_ID=
+AUTH_URI=
+TOKEN_URI=
+AUTH_PROVIDER_x509_CERT_URL=
+CLIENT_x509_CERT_URL=
+DATABASE_URI=
