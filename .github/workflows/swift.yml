@@ -20,7 +20,7 @@ jobs:
     if: github.actor != 'my_bot_account'
     steps:
       - name: Stop Loop
-        if: github.event.inputs.stop == 'true' || env.STOP_LOOP == 'true'
+        if: github.event.inputs.stop == 'true'
         run: exit 0
         
       - name: Checkout code
