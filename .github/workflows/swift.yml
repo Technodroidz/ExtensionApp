@@ -8,13 +8,21 @@ on:
       - '*'
   pull_request:
     branches:
-      - main       
+      - main   
+  workflow_dispatch:
+    inputs:
+      stop:
+        description: 'Stop the loop'    
 
 jobs:
   test:
     runs-on: macos-latest
     if: github.actor != 'my_bot_account'
     steps:
+      - name: Stop Loop
+        if: github.event.inputs.stop == 'true'
+        run: exit 0
+        
       - name: Checkout code
         uses: actions/checkout@v2
 
