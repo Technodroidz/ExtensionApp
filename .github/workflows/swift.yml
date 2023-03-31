@@ -55,7 +55,7 @@ jobs:
 
   build-and-release:
     needs: test
-    if: github.event_name == 'release' || github.event_name == 'push' && env.DEPLOYED == 'true'
+    if: github.event_name == 'release' || github.event_name == 'push' && ${{ env.DEPLOYED }} == 'true'
     runs-on: macos-latest
     steps:
       - name: Checkout code
@@ -96,5 +96,4 @@ jobs:
           automatic_release_tag: "Safari-New-Release"
 
       - name: Set environment variable
-        if: github.event_name == 'push' && env.stop != 'true'
         run: echo "DEPLOYED=true" >> $GITHUB_ENV
