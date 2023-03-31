@@ -8,7 +8,7 @@ on:
 jobs:
   test:
     runs-on: macos-latest
-    if: github.ref == 'refs/heads/main'  # Add this condition to only run the job for the main branch
+    if: github.ref == 'refs/heads/main'
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
