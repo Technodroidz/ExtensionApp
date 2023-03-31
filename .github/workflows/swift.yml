@@ -4,15 +4,11 @@ on:
   push:
     branches:
       - main
-    tags:
-      - '*'
-  pull_request:
-    branches:
-      - main       
 
 jobs:
   test:
     runs-on: macos-latest
+    if: github.ref == 'refs/heads/main'  # Add this condition to only run the job for the main branch
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -64,7 +60,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./SafariExtApp   
+        working-directory: ./SafariExtApp
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
