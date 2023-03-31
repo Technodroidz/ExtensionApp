@@ -50,7 +50,7 @@ jobs:
 
   build-and-release:
     needs: test
-    if: github.event_name == 'release' || github.event_name == 'push' && env.DEPLOYED != 'true'
+    if: github.event_name == 'release' || github.event_name == 'push' && DEPLOYED != 'true'
     runs-on: macos-latest
     steps:
       - name: Checkout code
