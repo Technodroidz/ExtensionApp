@@ -15,3 +15,14 @@ It will track all the browsing history of users and save it to firebase realtime
 Instructions :
 Please add your base url in the content.js file, you find this file in below given location :
 "SafariExtApp->Shared(Extension)->Resources->content.js"
+
+Commands to run after cloning : 
+1 install ruby
+2 install bundler
+3 install node js
+4 npm install
+
+Tests :
+1 Load Testing
+2 should be visible and accessible from the toolbar or menu
+3 should handle high traffic without errors

@@ -8,3 +8,12 @@ Details : It will track all the browsing history of users and save it to firebas
 
 Instructions :
 Please add your base url in the script.js file.
+
+Commands to run after cloning : 
+1 install node js
+2 npm install
+
+Tests :
+1 should use HTTPS instead of HTTP
+2 Load Testing
+3 should not use any vulnerable dependencies

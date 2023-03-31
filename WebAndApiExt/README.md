@@ -23,3 +23,14 @@ TOKEN_URI=
 AUTH_PROVIDER_x509_CERT_URL=
 CLIENT_x509_CERT_URL=
 DATABASE_URI=
+
+Commands to run after cloning : 
+1 php artisan optimize:clear
+2 php artisan key:generate
+3 composer install
+4 npm install
+
+Tests :
+1 URL Testing
+2 Load Testing
+3 Security Testing
