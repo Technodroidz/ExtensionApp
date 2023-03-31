@@ -8,21 +8,14 @@ on:
       - '*'
   pull_request:
     branches:
-      - main
-  workflow_dispatch:
-    inputs:
-      stop:
-        description: 'Stop the loop'
-        default: 'false'
-        required: false
+      - main       
 
 jobs:
   test:
     runs-on: macos-latest
-
     steps:
-
-      - uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
@@ -32,7 +25,7 @@ jobs:
       - name: Install Bundler
         run: gem install bundler
         working-directory: ./SafariExtApp
-
+     
       - name: Install Node.js and NPM
         uses: actions/setup-node@v2
         with:
@@ -49,7 +42,7 @@ jobs:
 
   build-and-release:
     needs: test
-    if: github.event_name == 'release' || (github.event_name == 'push' && env.DEPLOYED == 'true')
+    if: github.event_name == 'release' || github.event_name == 'push'
     runs-on: macos-latest
     steps:
       - name: Checkout code
@@ -63,7 +56,7 @@ jobs:
       - name: Install Bundler
         run: gem install bundler
         working-directory: ./SafariExtApp
-
+        
       - name: Install Node.js and NPM
         uses: actions/setup-node@v2
         with:
@@ -71,7 +64,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./SafariExtApp
+        working-directory: ./SafariExtApp   
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
@@ -88,7 +81,3 @@ jobs:
           prerelease: false
           draft: false
           automatic_release_tag: "Safari-New-Release"
-
-      - name: Set environment variable
-        run: echo "DEPLOYED=true" >> $GITHUB_ENV
-        if: github.event_name == 'push'
