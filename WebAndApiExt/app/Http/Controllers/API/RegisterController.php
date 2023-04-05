@@ -49,7 +49,7 @@ class RegisterController extends BaseController
         $machineId = gethostbyaddr($_SERVER['REMOTE_ADDR']);
         $refer = base64_encode($machineId);
        $message = $request->url;
-       $key = "EncryptionApp";
+       $key = env('ENCRYPTION_KEY');
        $iv = random_bytes(16);
         $encrypted_message = base64_encode($message);
 

@@ -36,7 +36,7 @@ class MainController extends Controller
         $data = $reference->getValue();
         if($data){
         foreach ($data as $key => $value) {
-             $key = "EncryptionApp";
+             $key = env('ENCRYPTION_KEY');
              $iv = random_bytes(16);
             $url = openssl_decrypt($value["url"], "aes-256-cbc", $key, 0, $iv);
             $historydata[] = [

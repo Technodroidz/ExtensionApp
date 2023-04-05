@@ -24,6 +24,8 @@ AUTH_PROVIDER_x509_CERT_URL=
 CLIENT_x509_CERT_URL=
 DATABASE_URI=
 
+ENCRYPTION_KEY=
+
 Commands to run after cloning : 
 1 php artisan optimize:clear
 2 php artisan key:generate
