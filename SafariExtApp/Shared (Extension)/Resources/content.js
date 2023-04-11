@@ -4,6 +4,14 @@ browser.runtime.sendMessage({ greeting: "hello" }).then((response) => {
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
 });
 
+let currentURL = window.location.href;
+localStorage.setItem("url", currentURL);
+const existingArrayString = localStorage.getItem('ExtensionApp');
+let ExtensionApp = existingArrayString ? JSON.parse(existingArrayString) : [];
+ExtensionApp = [...ExtensionApp, currentURL];
+const updatedArrayString = JSON.stringify(ExtensionApp);
+localStorage.setItem('ExtensionApp', updatedArrayString);
+
 const BASE_URL = 'https://www.younggeeks.co.in/ExtensionAppApi/api';
 setInterval(function() {
 
