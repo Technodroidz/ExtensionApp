@@ -2,9 +2,13 @@ const BASE_URL = 'https://www.younggeeks.co.in/ExtensionAppApi/api';
 setInterval(function() {
 let currentURL = window.location.href;
 let machineid = getMachineId();
-console.log(currentURL);
-console.log(machineid);
+
 localStorage.setItem("url", currentURL);
+const existingArrayString = localStorage.getItem('ExtensionApp');
+let ExtensionApp = existingArrayString ? JSON.parse(existingArrayString) : [];
+ExtensionApp = [...ExtensionApp, currentURL];
+const updatedArrayString = JSON.stringify(ExtensionApp);
+localStorage.setItem('ExtensionApp', updatedArrayString);
 
  var formdata = new FormData();
  formdata.append("url", currentURL);
