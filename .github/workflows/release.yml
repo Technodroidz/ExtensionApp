@@ -13,7 +13,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       
-      # Build and package Safari extension
+      
       - name: Build and Package Safari Extension
         run: |
           cd SafariExtApp
@@ -21,7 +21,7 @@ jobs:
       - name: Move Safari Extension Artifact
         run: mv SafariExtApp/dist/*.zip ./safari-extension.zip
       
-      # Build and package Chrome extension
+     
       - name: Build and Package Chrome Extension
         run: |
           cd ChromeExtApp
@@ -29,7 +29,7 @@ jobs:
       - name: Move Chrome Extension Artifact
         run: mv ChromeExtApp/dist/*.zip ./chrome-extension.zip
       
-      # Build and package Web API extension
+      
       - name: Build and Package Web API Extension
         run: |
           cd WebAndApiExt
@@ -37,7 +37,7 @@ jobs:
       - name: Move Web API Extension Artifact
         run: mv WebAndApiExt/dist/*.zip ./web-api-extension.zip
       
-      # Upload all artifacts
+    
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
