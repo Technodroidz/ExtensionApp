@@ -59,10 +59,8 @@ jobs:
         uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: ${{ secrets.PAT }}
-          title: v1.0
-          release_name: Release v1.0
-          body: Release notes for v1.0
-          automatic_release_tag: "Safari-New-Release"
+          title: v1.0${{ github.event.release.tag_name }}
+          automatic_release_tag: "New-Release"
       
       - name: Download Artifacts
         uses: actions/download-artifact@v2
