@@ -18,33 +18,34 @@ jobs:
         run: |
           cd SafariExtApp
           npm install
-      - name: Upload Safari Extension
-        uses: actions/upload-artifact@v2
-        with:
-          name: safari-extension
-          path: ./SafariExtApp/dist/*.zip
-    
+      - name: Move Safari Extension Artifact
+        run: mv SafariExtApp/dist/*.zip ./safari-extension.zip
+      
       # Build and package Chrome extension
       - name: Build and Package Chrome Extension
         run: |
           cd ChromeExtApp
           npm install
-      - name: Upload Chrome Extension
-        uses: actions/upload-artifact@v2
-        with:
-          name: chrome-extension
-          path: ChromeExtApp/dist/*.zip
-    
+      - name: Move Chrome Extension Artifact
+        run: mv ChromeExtApp/dist/*.zip ./chrome-extension.zip
+      
       # Build and package Web API extension
       - name: Build and Package Web API Extension
         run: |
           cd WebAndApiExt
           npm install
-      - name: Upload Web API Extension
+      - name: Move Web API Extension Artifact
+        run: mv WebAndApiExt/dist/*.zip ./web-api-extension.zip
+      
+      # Upload all artifacts
+      - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: web-api-extension
-          path: WebAndApiExt/dist/*.zip
+          name: all-artifacts
+          path: |
+            safari-extension.zip
+            chrome-extension.zip
+            web-api-extension.zip
 
   create-release:
     needs: build-and-package
@@ -63,20 +64,7 @@ jobs:
           body: Release notes for v1.0
           automatic_release_tag: "Safari-New-Release"
       
-      - name: Download Safari Extension
+      - name: Download Artifacts
         uses: actions/download-artifact@v2
         with:
-          name: safari-extension
-          path: SafariExtApp
-      
-      - name: Download Chrome Extension
-        uses: actions/download-artifact@v2
-        with:
-          name: chrome-extension
-          path: ChromeExtApp
-      
-      - name: Download Web API Extension
-        uses: actions/download-artifact@v2
-        with:
-          name: web-api-extension
-          path: WebAndApiExt
+          name: all-artifacts
