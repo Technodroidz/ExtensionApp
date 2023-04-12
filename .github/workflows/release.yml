@@ -81,7 +81,20 @@ jobs:
           title: Web API Extension v1.0${{ github.event.release.tag_name }}
           automatic_release_tag: "Web-API-New-Release"
       
-      - name: Download Artifacts
+      - name: Download Safari Extension Artifact
         uses: actions/download-artifact@v2
         with:
-          name: all-artifacts
+          name: safari-extension
+          path: .
+      
+      - name: Download Chrome Extension Artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: chrome-extension
+          path: .
+      
+      - name: Download Web API Extension Artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: web-api-extension
+          path: .
