@@ -57,6 +57,7 @@ jobs:
       - name: Create Release
         uses: actions/create-release@v1
         with:
+          repo_token: ${{ secrets.PAT }}
           tag_name: v1.0
           release_name: Release v1.0
           body: Release notes for v1.0
