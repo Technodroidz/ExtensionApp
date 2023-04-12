@@ -58,9 +58,10 @@ jobs:
         uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: ${{ secrets.PAT }}
-          tag_name: v1.0
+          title: v1.0
           release_name: Release v1.0
           body: Release notes for v1.0
+          automatic_release_tag: "Safari-New-Release"
       
       - name: Download Safari Extension
         uses: actions/download-artifact@v2
