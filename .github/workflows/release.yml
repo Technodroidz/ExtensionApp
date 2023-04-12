@@ -18,8 +18,6 @@ jobs:
         run: |
           cd SafariExtApp
           npm install
-          npm run build
-          npm run package
       - name: Upload Safari Extension
         uses: actions/upload-artifact@v2
         with:
@@ -31,8 +29,6 @@ jobs:
         run: |
           cd ChromeExtApp
           npm install
-          npm run build
-          npm run package
       - name: Upload Chrome Extension
         uses: actions/upload-artifact@v2
         with:
@@ -44,8 +40,6 @@ jobs:
         run: |
           cd WebAndApiExt
           npm install
-          npm run build
-          npm run package
       - name: Upload Web API Extension
         uses: actions/upload-artifact@v2
         with:
