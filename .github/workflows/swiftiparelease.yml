@@ -1,4 +1,4 @@
-name: Test and Deploy iOS App
+name: Generate IPA
 
 on:
   push:
@@ -10,22 +10,26 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Set up Xcode
-      run: sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+      - name: Set up Xcode
+        run: sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
 
-    - name: Install dependencies
-      run: pod install
+      - name: Install CocoaPods
+        run: sudo gem install cocoapods
 
-    - name: Build and Archive
-      run: xcodebuild -workspace SafariExtApp.xcworkspace -scheme SafariExtApp -destination "generic/platform=iOS" clean archive -archivePath SafariExtApp.xcarchive
+      - name: Install dependencies
+        run: pod install
+        working-directory: ./SafariExtApp
 
-    - name: Create IPA
-      run: xcodebuild -exportArchive -archivePath SafariExtApp.xcarchive -exportPath . -exportOptionsPlist exportOptions.plist -allowProvisioningUpdates
+      - name: Build and Archive
+        run: xcodebuild -workspace SafariExtApp.xcworkspace -scheme SafariExtApp -destination "generic/platform=iOS" clean archive -archivePath SafariExtApp.xcarchive
 
-    - name: Upload IPA to GitHub Releases
-      uses: svenstaro/upload-release-action@v2
-      with:
-        args: SafariExtApp.ipa
+      - name: Create IPA
+        run: xcodebuild -exportArchive -archivePath SafariExtApp.xcarchive -exportPath . -exportOptionsPlist exportOptions.plist -allowProvisioningUpdates
+
+      - name: Upload IPA to GitHub Releases
+        uses: svenstaro/upload-release-action@v2
+        with:
+          args: SafariExtApp.ipa
