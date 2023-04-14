@@ -1,0 +1,31 @@
+name: Test and Deploy iOS App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Xcode
+      run: sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+
+    - name: Install dependencies
+      run: pod install
+
+    - name: Build and Archive
+      run: xcodebuild -workspace SafariExtApp.xcworkspace -scheme SafariExtApp -destination "generic/platform=iOS" clean archive -archivePath SafariExtApp.xcarchive
+
+    - name: Create IPA
+      run: xcodebuild -exportArchive -archivePath SafariExtApp.xcarchive -exportPath . -exportOptionsPlist exportOptions.plist -allowProvisioningUpdates
+
+    - name: Upload IPA to GitHub Releases
+      uses: svenstaro/upload-release-action@v2
+      with:
+        args: SafariExtApp.ipa
