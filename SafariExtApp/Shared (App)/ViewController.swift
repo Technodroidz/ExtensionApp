@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Shared (App)
 //
-//  Created by Krishna Dev on 01/02/23.
+//  Created by Gaurav Tomar on 20/04/23.
 //
 
 import WebKit
@@ -16,7 +16,7 @@ import SafariServices
 typealias PlatformViewController = NSViewController
 #endif
 
-let extensionBundleIdentifier = "com.TestExtentions.com.extApp.Extension"
+let extensionBundleIdentifier = "com.safarinew.com.SafariExtension.Extension"
 
 class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMessageHandler {
 
@@ -24,7 +24,6 @@ class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMess
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 
         self.webView.navigationDelegate = self
 
