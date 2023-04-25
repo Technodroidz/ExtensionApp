@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		083CC178EBC8B0D931D50F10 /* Pods_SafariExtension_Extension__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4F297147EE661611E922B5 /* Pods_SafariExtension_Extension__iOS_.framework */; };
 		08ECC5A229F107B50049C376 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ECC5A129F107B50049C376 /* AppDelegate.swift */; };
 		08ECC5A429F107B50049C376 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ECC5A329F107B50049C376 /* SceneDelegate.swift */; };
 		08ECC5A729F107B50049C376 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08ECC5A529F107B50049C376 /* LaunchScreen.storyboard */; };
@@ -45,6 +46,9 @@
 		08ECC5E829F107B50049C376 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 08ECC59829F107B50049C376 /* popup.css */; };
 		08ECC5E929F107B50049C376 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 08ECC59929F107B50049C376 /* popup.js */; };
 		08ECC5EA29F107B50049C376 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 08ECC59929F107B50049C376 /* popup.js */; };
+		7DCC213C78B35384133D4CE9 /* Pods_SafariExtension__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE331F2057878445EA856B36 /* Pods_SafariExtension__macOS_.framework */; };
+		BE419C2C81A73295D072F654 /* Pods_SafariExtension__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999156C3359AD34E29E68467 /* Pods_SafariExtension__iOS_.framework */; };
+		C3934C05D9BC8762124D9166 /* Pods_SafariExtension_Extension__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A4884254B0F76C3BFDC104 /* Pods_SafariExtension_Extension__macOS_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +124,18 @@
 		08ECC5C629F107B50049C376 /* SafariExtension Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SafariExtension Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08ECC5CB29F107B50049C376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08ECC5CC29F107B50049C376 /* SafariExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafariExtension.entitlements; sourceTree = "<group>"; };
+		21A4884254B0F76C3BFDC104 /* Pods_SafariExtension_Extension__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafariExtension_Extension__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		485E8558832A8E3E4C22B804 /* Pods-SafariExtension Extension (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafariExtension Extension (macOS).release.xcconfig"; path = "Target Support Files/Pods-SafariExtension Extension (macOS)/Pods-SafariExtension Extension (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		5B4F297147EE661611E922B5 /* Pods_SafariExtension_Extension__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafariExtension_Extension__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80118A78E4653568A3D589A4 /* Pods-SafariExtension (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafariExtension (iOS).debug.xcconfig"; path = "Target Support Files/Pods-SafariExtension (iOS)/Pods-SafariExtension (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		999156C3359AD34E29E68467 /* Pods_SafariExtension__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafariExtension__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C29E4BEB06F010CB0829B6F /* Pods-SafariExtension (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafariExtension (iOS).release.xcconfig"; path = "Target Support Files/Pods-SafariExtension (iOS)/Pods-SafariExtension (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		A4AF3DC25043C5ECD696FD12 /* Pods-SafariExtension Extension (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafariExtension Extension (macOS).debug.xcconfig"; path = "Target Support Files/Pods-SafariExtension Extension (macOS)/Pods-SafariExtension Extension (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		BD861BA7986A8B270763B33C /* Pods-SafariExtension Extension (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafariExtension Extension (iOS).debug.xcconfig"; path = "Target Support Files/Pods-SafariExtension Extension (iOS)/Pods-SafariExtension Extension (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		DE331F2057878445EA856B36 /* Pods_SafariExtension__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafariExtension__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D9A6A027B4E43699339F06 /* Pods-SafariExtension Extension (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafariExtension Extension (iOS).release.xcconfig"; path = "Target Support Files/Pods-SafariExtension Extension (iOS)/Pods-SafariExtension Extension (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		EAA8A81E7F009063A52CE50B /* Pods-SafariExtension (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafariExtension (macOS).release.xcconfig"; path = "Target Support Files/Pods-SafariExtension (macOS)/Pods-SafariExtension (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		EC3B23D8C9F09DB80170A689 /* Pods-SafariExtension (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafariExtension (macOS).debug.xcconfig"; path = "Target Support Files/Pods-SafariExtension (macOS)/Pods-SafariExtension (macOS).debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE419C2C81A73295D072F654 /* Pods_SafariExtension__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DCC213C78B35384133D4CE9 /* Pods_SafariExtension__macOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				083CC178EBC8B0D931D50F10 /* Pods_SafariExtension_Extension__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,12 +167,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3934C05D9BC8762124D9166 /* Pods_SafariExtension_Extension__macOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0188B202F74FDC76C11C6B8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				999156C3359AD34E29E68467 /* Pods_SafariExtension__iOS_.framework */,
+				DE331F2057878445EA856B36 /* Pods_SafariExtension__macOS_.framework */,
+				5B4F297147EE661611E922B5 /* Pods_SafariExtension_Extension__iOS_.framework */,
+				21A4884254B0F76C3BFDC104 /* Pods_SafariExtension_Extension__macOS_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		08ECC58129F107AF0049C376 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +195,8 @@
 				08ECC5C029F107B50049C376 /* iOS (Extension) */,
 				08ECC5CA29F107B50049C376 /* macOS (Extension) */,
 				08ECC59F29F107B50049C376 /* Products */,
+				F833DA01DF18FCB43B1D8E08 /* Pods */,
+				0188B202F74FDC76C11C6B8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -262,6 +295,22 @@
 			path = "macOS (Extension)";
 			sourceTree = "<group>";
 		};
+		F833DA01DF18FCB43B1D8E08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80118A78E4653568A3D589A4 /* Pods-SafariExtension (iOS).debug.xcconfig */,
+				9C29E4BEB06F010CB0829B6F /* Pods-SafariExtension (iOS).release.xcconfig */,
+				EC3B23D8C9F09DB80170A689 /* Pods-SafariExtension (macOS).debug.xcconfig */,
+				EAA8A81E7F009063A52CE50B /* Pods-SafariExtension (macOS).release.xcconfig */,
+				BD861BA7986A8B270763B33C /* Pods-SafariExtension Extension (iOS).debug.xcconfig */,
+				E4D9A6A027B4E43699339F06 /* Pods-SafariExtension Extension (iOS).release.xcconfig */,
+				A4AF3DC25043C5ECD696FD12 /* Pods-SafariExtension Extension (macOS).debug.xcconfig */,
+				485E8558832A8E3E4C22B804 /* Pods-SafariExtension Extension (macOS).release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -269,6 +318,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08ECC5F129F107B50049C376 /* Build configuration list for PBXNativeTarget "SafariExtension (iOS)" */;
 			buildPhases = (
+				327E3414A3EC0CE2E5DBDF35 /* [CP] Check Pods Manifest.lock */,
 				08ECC59A29F107B50049C376 /* Sources */,
 				08ECC59B29F107B50049C376 /* Frameworks */,
 				08ECC59C29F107B50049C376 /* Resources */,
@@ -288,6 +338,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08ECC5F829F107B50049C376 /* Build configuration list for PBXNativeTarget "SafariExtension (macOS)" */;
 			buildPhases = (
+				1900985D53C95EC46859C1D6 /* [CP] Check Pods Manifest.lock */,
 				08ECC5AC29F107B50049C376 /* Sources */,
 				08ECC5AD29F107B50049C376 /* Frameworks */,
 				08ECC5AE29F107B50049C376 /* Resources */,
@@ -307,6 +358,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08ECC5ED29F107B50049C376 /* Build configuration list for PBXNativeTarget "SafariExtension Extension (iOS)" */;
 			buildPhases = (
+				C15673AFBB26F1BBEC2A2B87 /* [CP] Check Pods Manifest.lock */,
 				08ECC5B829F107B50049C376 /* Sources */,
 				08ECC5B929F107B50049C376 /* Frameworks */,
 				08ECC5BA29F107B50049C376 /* Resources */,
@@ -324,6 +376,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08ECC5F429F107B50049C376 /* Build configuration list for PBXNativeTarget "SafariExtension Extension (macOS)" */;
 			buildPhases = (
+				389D155A30DB31D41AC6FEDD /* [CP] Check Pods Manifest.lock */,
 				08ECC5C229F107B50049C376 /* Sources */,
 				08ECC5C329F107B50049C376 /* Frameworks */,
 				08ECC5C429F107B50049C376 /* Resources */,
@@ -441,6 +494,97 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1900985D53C95EC46859C1D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SafariExtension (macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		327E3414A3EC0CE2E5DBDF35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SafariExtension (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		389D155A30DB31D41AC6FEDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SafariExtension Extension (macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C15673AFBB26F1BBEC2A2B87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SafariExtension Extension (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		08ECC59A29F107B50049C376 /* Sources */ = {
@@ -640,6 +784,7 @@
 		};
 		08ECC5EE29F107B50049C376 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD861BA7986A8B270763B33C /* Pods-SafariExtension Extension (iOS).debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
@@ -675,6 +820,7 @@
 		};
 		08ECC5EF29F107B50049C376 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4D9A6A027B4E43699339F06 /* Pods-SafariExtension Extension (iOS).release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
@@ -711,6 +857,7 @@
 		};
 		08ECC5F229F107B50049C376 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80118A78E4653568A3D589A4 /* Pods-SafariExtension (iOS).debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -753,6 +900,7 @@
 		};
 		08ECC5F329F107B50049C376 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C29E4BEB06F010CB0829B6F /* Pods-SafariExtension (iOS).release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -796,6 +944,7 @@
 		};
 		08ECC5F529F107B50049C376 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4AF3DC25043C5ECD696FD12 /* Pods-SafariExtension Extension (macOS).debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/SafariExtension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -830,6 +979,7 @@
 		};
 		08ECC5F629F107B50049C376 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 485E8558832A8E3E4C22B804 /* Pods-SafariExtension Extension (macOS).release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/SafariExtension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -864,6 +1014,7 @@
 		};
 		08ECC5F929F107B50049C376 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC3B23D8C9F09DB80170A689 /* Pods-SafariExtension (macOS).debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -901,6 +1052,7 @@
 		};
 		08ECC5FA29F107B50049C376 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAA8A81E7F009063A52CE50B /* Pods-SafariExtension (macOS).release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

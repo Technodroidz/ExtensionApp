@@ -1,0 +1,6 @@
+framework module Pods_SafariExtension_Extension__iOS_ {
+  umbrella header "Pods-SafariExtension Extension (iOS)-umbrella.h"
+
+  export *
+  module * { export * }
+}
