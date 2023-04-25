@@ -24,7 +24,7 @@ jobs:
         working-directory: ./SafariExtApp
 
       - name: Build and Archive
-        run: xcodebuild -workspace SafariExtApp.xcworkspace -scheme SafariExtApp -destination "generic/platform=iOS" clean archive -archivePath SafariExtApp.xcarchive
+        run: xcodebuild -workspace SafariExtension.xcworkspace -scheme SafariExtApp -destination "generic/platform=iOS" clean archive -archivePath SafariExtApp.xcarchive
 
       - name: Create IPA
         run: xcodebuild -exportArchive -archivePath SafariExtApp.xcarchive -exportPath . -exportOptionsPlist exportOptions.plist -allowProvisioningUpdates
