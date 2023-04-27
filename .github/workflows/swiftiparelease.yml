@@ -38,15 +38,17 @@ jobs:
           sudo gem install spaceship
           sudo gem install transporter 
 
-      - name: Authenticate with App Store Connect
-        uses: apple/setup-actool@v1
-        with:
-          username: ${{ secrets.APPLE_ID }}
-          password: ${{ secrets.APP_SPECIFIC_PASSWORD }}
-          app-specific-password: ${{ secrets.APP_SPECIFIC_PASSWORD }}
-          distribution-certificate: ${{ secrets.DISTRIBUTION_CERTIFICATE }}
-          distribution-certificate-password: ${{ secrets.DISTRIBUTION_CERTIFICATE_PASSWORD }}
-          provisioning-profile: ${{ secrets.PROVISIONING_PROFILE }}
+      - name: Import Distribution Certificate and Key
+        run: |
+          echo "${{ secrets.DISTRIBUTION_CERTIFICATE }}" | base64 --decode > dist.p12
+          security create-keychain -p keychainPassword build.keychain
+          security import dist.p12 -P "${{ secrets.DISTRIBUTION_CERTIFICATE_PASSWORD }}" -A -t cert -f pkcs12 -k ~/Library/Keychains/build.keychain
+          security set-key-partition-list -S apple-tool:,apple: -s -k keychainPassword ~/Library/Keychains/build.keychain
+
+      - name: Sign IPA
+        run: |
+          codesign --force --sign "iPhone Distribution" --entitlements entitlements.plist --timestamp=none extApp.ipa
+        working-directory: ./SafariExtApp
 
       - name: Upload to TestFlight
         run: |
