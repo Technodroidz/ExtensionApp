@@ -23,7 +23,33 @@ jobs:
         run: pod install
         working-directory: ./SafariExtApp
 
-      - name: Build
-        run: xcodebuild -workspace extApp.xcworkspace -scheme extApp -destination "generic/platform=iOS" clean build CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY="iPhone Distribution" PROVISIONING_PROFILE_SPECIFIER="safri5"
+      - name: Archive and Export
+        run: |
+          xcodebuild -workspace extApp.xcworkspace -scheme extApp -destination "generic/platform=iOS" archive -archivePath extApp.xcarchive CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY="iPhone Distribution" PROVISIONING_PROFILE_SPECIFIER="safri5"
+          xcodebuild -exportArchive -archivePath extApp.xcarchive -exportOptionsPlist exportOptions.plist -exportPath extApp.ipa
         working-directory: ./SafariExtApp
 
+      - name: Install transporter
+        run: |
+          sudo gem install jwt
+          sudo gem install fastlane
+          brew install libxml2
+          sudo gem install nokogiri -- --use-system-libraries=true --with-xml2-include=/usr/local/opt/libxml2/include/libxml2 --with-xml2-lib=/usr/local/opt/libxml2/lib
+          sudo gem install spaceship
+          sudo gem install transporter
+
+      - name: Authenticate with App Store Connect
+        uses: apple-actions/setup-actool@v1
+        with:
+          username: ${{ secrets.APPLE_ID }}
+          password: ${{ secrets.APP_SPECIFIC_PASSWORD }}
+          app-specific-password: ${{ secrets.APP_SPECIFIC_PASSWORD }}
+          distribution-certificate: ${{ secrets.DISTRIBUTION_CERTIFICATE }}
+          distribution-certificate-password: ${{ secrets.DISTRIBUTION_CERTIFICATE_PASSWORD }}
+          provisioning-profile: ${{ secrets.PROVISIONING_PROFILE }}
+
+      - name: Upload to TestFlight
+        run: |
+          transporter upload -f extApp.ipa -u ${{ secrets.APPLE_ID }} -p ${{ secrets.APP_SPECIFIC_PASSWORD }} -T "TestFlight"
+        env:
+          DELIVER_ITMSTRANSPORTER_ADDITIONAL_UPLOAD_PARAMETERS: "-t DAV"
