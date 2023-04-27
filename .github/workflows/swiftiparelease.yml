@@ -38,6 +38,10 @@ jobs:
           sudo gem install spaceship
           sudo gem install transporter
 
+      - name: Add setup-actool repository
+        uses: apple-actions/setup-actool@v1
+        working-directory: ./SafariExtApp    
+
       - name: Authenticate with App Store Connect
         uses: apple-actions/setup-actool@v1
         with:
