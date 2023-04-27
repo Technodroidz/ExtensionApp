@@ -29,10 +29,12 @@ jobs:
 
       - name: Create IPA
         run: xcodebuild -exportArchive -archivePath extApp.xcarchive -exportPath . -exportOptionsPlist exportOptions.plist -allowProvisioningUpdates
+        working-directory: ./SafariExtApp
 
       - name: Install fastlane
         run: sudo gem install fastlane -NV
-
+        working-directory: ./SafariExtApp
+        
       - name: Upload to TestFlight
         run: fastlane pilot upload -u info@technodroidz.in -a com.safarinew.com.SafariExtension -f SafariExtApp.ipa
 
