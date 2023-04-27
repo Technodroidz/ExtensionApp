@@ -1,4 +1,4 @@
-name: Generate and Deploy IPA to TestFlight
+name: Continuous Delivery for iOS using Fastlane and GitHub Actions
 
 on:
   push:
@@ -13,45 +13,35 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Xcode
-        run: sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+      - name: Install Xcode
+        uses: xcpretty/xcode-install@v2
+        with:
+          xcode-version: "13.2.1"
+
+      - name: Install Bundler
+        run: |
+          gem install bundler
+          bundle install
+        working-directory: ./SafariExtApp
 
       - name: Install CocoaPods
-        run: sudo gem install cocoapods
-
-      - name: Install dependencies
-        run: pod install
+        run: |
+          gem install cocoapods
+          pod install
         working-directory: ./SafariExtApp
 
-      - name: Archive and Export
+      - name: Build and sign archive
         run: |
-          xcodebuild -workspace extApp.xcworkspace -scheme extApp -destination "generic/platform=iOS" archive -archivePath extApp.xcarchive CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY="iPhone Distribution" PROVISIONING_PROFILE_SPECIFIER="safri5"
-          xcodebuild -exportArchive -archivePath extApp.xcarchive -exportOptionsPlist exportOptions.plist -exportPath extApp.ipa
-        working-directory: ./SafariExtApp
-
-      - name: Install transporter
-        run: |
-          sudo gem install jwt
-          sudo gem install fastlane
-          brew install libxml2
-          sudo gem install nokogiri -- --use-system-libraries=true --with-xml2-include=/usr/local/opt/libxml2/include/libxml2 --with-xml2-lib=/usr/local/opt/libxml2/lib
-          sudo gem install spaceship
-          sudo gem install transporter 
-
-      - name: Import Distribution Certificate and Key
-        run: |
-          echo "${{ secrets.DISTRIBUTION_CERTIFICATE }}" | base64 --decode > dist.p12
-          security create-keychain -p keychainPassword build.keychain
-          security import dist.p12 -P "${{ secrets.DISTRIBUTION_CERTIFICATE_PASSWORD }}" -A -t cert -f pkcs12 -k ~/Library/Keychains/build.keychain
-          security set-key-partition-list -S apple-tool:,apple: -s -k keychainPassword ~/Library/Keychains/build.keychain
-
-      - name: Sign IPA
-        run: |
-          codesign --force --sign "iPhone Distribution" --entitlements entitlements.plist --timestamp=none extApp.ipa
+          bundle exec fastlane build
+          bundle exec fastlane sign
         working-directory: ./SafariExtApp
 
       - name: Upload to TestFlight
-        run: |
-          transporter upload -f extApp.ipa -u ${{ secrets.APPLE_ID }} -p ${{ secrets.APP_SPECIFIC_PASSWORD }} -T "TestFlight"
-        env:
-          DELIVER_ITMSTRANSPORTER_ADDITIONAL_UPLOAD_PARAMETERS: "-t DAV"
+        uses: apple/upload-app@v1
+        with:
+          app-path: ./SafariExtApp/build/ExtApp.ipa
+          bundle-id: com.example.ExtApp
+          provider-shortname: ${{ secrets.APP_STORE_CONNECT_PROVIDER_SHORTNAME }}
+          issuer-id: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+          key-id: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+          private-key: ${{ secrets.APP_STORE_CONNECT_PRIVATE_KEY }}
