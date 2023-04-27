@@ -307,7 +307,6 @@
 				A4AF3DC25043C5ECD696FD12 /* Pods-SafariExtension Extension (macOS).debug.xcconfig */,
 				485E8558832A8E3E4C22B804 /* Pods-SafariExtension Extension (macOS).release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

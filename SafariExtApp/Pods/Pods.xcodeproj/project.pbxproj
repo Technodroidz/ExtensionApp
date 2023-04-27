@@ -7,120 +7,120 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		296787CC08C8B8AC8CD4EA5B4F11F6D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3261E5A5395F45780622405F504B2804 /* Foundation.framework */; };
-		350FCF6FC1B21C810E259038C15946DD /* Pods-SafariExtension Extension (macOS)-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC8BEF3C105D527DF656BA0345E91DC /* Pods-SafariExtension Extension (macOS)-dummy.m */; };
-		3CD05D572F913CC96E91698649155D37 /* Pods-SafariExtension (macOS)-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5429EC988BE92EDF6E27ACE48108E054 /* Pods-SafariExtension (macOS)-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4018E81550394FE8DCB41FE24CFE6ABC /* Pods-SafariExtension (iOS)-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB683A09DF3A8C962D75FCA768D6D4E /* Pods-SafariExtension (iOS)-dummy.m */; };
-		4598ACE864B42FBF3F9447BC20DA1B5E /* Pods-SafariExtension Extension (macOS)-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE91D2C34ACD9C6038334DDA0B4FDB9 /* Pods-SafariExtension Extension (macOS)-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4DD29EC1C02C2B2A2716889196C170E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3261E5A5395F45780622405F504B2804 /* Foundation.framework */; };
-		6E4D1B03031BBCFD779944A2E701BFED /* Pods-SafariExtension (iOS)-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B21934DE9BCE9CB33C9E78CF50D97E89 /* Pods-SafariExtension (iOS)-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		999241A9BCBD8D5166C3696F480ECE31 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A54C97DEB1A3977AC3A62AFF00971BF /* Cocoa.framework */; };
-		9E8B3AA85CD64604FB8A975AFA9A6CD3 /* Pods-SafariExtension (macOS)-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2685B6F610C6E4123C337CB600C06 /* Pods-SafariExtension (macOS)-dummy.m */; };
-		9F8449563014333C998A0E21C324D427 /* Pods-SafariExtension Extension (iOS)-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34459CF7A2AB462BC1AC38BB20EAA8EE /* Pods-SafariExtension Extension (iOS)-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5C329E2E94C19597751D43919D7EE97 /* Pods-SafariExtension Extension (iOS)-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C26876F6D6858AA7CF9D7A43CAB7EF3E /* Pods-SafariExtension Extension (iOS)-dummy.m */; };
-		FE492921A75D879A61BE3A829AC8D332 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A54C97DEB1A3977AC3A62AFF00971BF /* Cocoa.framework */; };
+		0F9DDE7B05E505A40DEE17CDB79B2F49 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A54C97DEB1A3977AC3A62AFF00971BF /* Cocoa.framework */; };
+		1057637842DB548D5EA735DE2ECBEBE6 /* Pods-extApp (macOS)-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A03E53ABC3FAF315A4EC33ED97FCE74 /* Pods-extApp (macOS)-dummy.m */; };
+		2786025E7176696B45AC532163E2531F /* Pods-extApp (iOS)-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 980D6183F8CE39B70F6CC6A8DC0D9C0C /* Pods-extApp (iOS)-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4442CB2DED6557D959AC0158949BB6BA /* Pods-extApp Extension (macOS)-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A355CB187049B297482787C237034E83 /* Pods-extApp Extension (macOS)-dummy.m */; };
+		5668E4BA3835E3D39BD2AA69730449EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3261E5A5395F45780622405F504B2804 /* Foundation.framework */; };
+		64FB46781F5257E0C507F22816C772B7 /* Pods-extApp (macOS)-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E6789CE72CB745BC4818018AE90A529 /* Pods-extApp (macOS)-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F956F4321192D1A9D8B3A5B3E6A2669 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3261E5A5395F45780622405F504B2804 /* Foundation.framework */; };
+		9D1D553BAD187C0B4289AAF8BCBA18C0 /* Pods-extApp (iOS)-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F4BAFA16A70A3FD72313EC08E43D56 /* Pods-extApp (iOS)-dummy.m */; };
+		C694108A0101E68A45ED0B56B95CB984 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A54C97DEB1A3977AC3A62AFF00971BF /* Cocoa.framework */; };
+		CF483706FF076866A7129B31DC1F80E8 /* Pods-extApp Extension (macOS)-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3547386C3420A46FB7D282490C42C64 /* Pods-extApp Extension (macOS)-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D64C23B4F29908616254FC8C39B04EF4 /* Pods-extApp Extension (iOS)-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C472C31A62BC4D754D483DF1D074F034 /* Pods-extApp Extension (iOS)-dummy.m */; };
+		E8B22A930498378104B67788AE248F71 /* Pods-extApp Extension (iOS)-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A39AA89110306B2D1E169A091ADD05C8 /* Pods-extApp Extension (iOS)-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		059651D798D1CAE252F560B500B51C18 /* Pods-SafariExtension (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SafariExtension (iOS).release.xcconfig"; sourceTree = "<group>"; };
-		1DB683A09DF3A8C962D75FCA768D6D4E /* Pods-SafariExtension (iOS)-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SafariExtension (iOS)-dummy.m"; sourceTree = "<group>"; };
-		1DD0A6ED62502F7C5ED9BAEF4DAFF3FD /* Pods-SafariExtension (iOS)-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SafariExtension (iOS)-Info.plist"; sourceTree = "<group>"; };
-		1E68F9B4119AE78E77E3C19C3DF1A60E /* Pods-SafariExtension Extension (iOS)-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SafariExtension Extension (iOS)-Info.plist"; sourceTree = "<group>"; };
-		205507CA4D315985227D2E3C5DB991AA /* Pods-SafariExtension (iOS)-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SafariExtension (iOS)-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2756926985CA2308BF93B3922FCD954C /* Pods-SafariExtension (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SafariExtension (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		0653D4BA979EBC9BBCBDB70EA3E48009 /* Pods-extApp (iOS)-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-extApp (iOS)-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1BA4DCB659574B5C217A68731CAA7BCB /* Pods-extApp Extension (iOS)-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-extApp Extension (iOS)-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1BD3CA5299BC6EBD1F195B4971972005 /* Pods-extApp (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-extApp (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		23A5988D4F5C31876E03AC042394C16B /* Pods-extApp Extension (macOS)-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-extApp Extension (macOS)-acknowledgements.plist"; sourceTree = "<group>"; };
+		2FE9E5C27D1765D29651BFC53D25C1AB /* Pods-extApp Extension (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-extApp Extension (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		3259FA92C9F4D13BCDAE3804F8F856A7 /* Pods-extApp Extension (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-extApp Extension (iOS).debug.xcconfig"; sourceTree = "<group>"; };
 		3261E5A5395F45780622405F504B2804 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		34459CF7A2AB462BC1AC38BB20EAA8EE /* Pods-SafariExtension Extension (iOS)-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SafariExtension Extension (iOS)-umbrella.h"; sourceTree = "<group>"; };
-		392C9E9384F9171FD25ABBCD3E1C3490 /* Pods-SafariExtension Extension (iOS).modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SafariExtension Extension (iOS).modulemap"; sourceTree = "<group>"; };
-		470D42C9EF5A58B75AD7FCBC69448DA2 /* Pods-SafariExtension (macOS)-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SafariExtension (macOS)-acknowledgements.plist"; sourceTree = "<group>"; };
-		480B919DA294D212555B269A2CBBD0A3 /* Pods-SafariExtension (iOS).modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SafariExtension (iOS).modulemap"; sourceTree = "<group>"; };
-		4AE91D2C34ACD9C6038334DDA0B4FDB9 /* Pods-SafariExtension Extension (macOS)-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SafariExtension Extension (macOS)-umbrella.h"; sourceTree = "<group>"; };
-		5429EC988BE92EDF6E27ACE48108E054 /* Pods-SafariExtension (macOS)-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SafariExtension (macOS)-umbrella.h"; sourceTree = "<group>"; };
+		375E8C31A510437D57A420232D267038 /* Pods-extApp Extension (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-extApp Extension (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		3A03E53ABC3FAF315A4EC33ED97FCE74 /* Pods-extApp (macOS)-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-extApp (macOS)-dummy.m"; sourceTree = "<group>"; };
+		41C21C1A24E7DF1E3934B5C2A4405CFD /* Pods-extApp (iOS)-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-extApp (iOS)-Info.plist"; sourceTree = "<group>"; };
+		56D841E9E494CE1BB758263FE9B1B7B9 /* Pods-extApp (macOS)-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-extApp (macOS)-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5A54C97DEB1A3977AC3A62AFF00971BF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		5EECC06EEF4AAB3F368FD05D9950E524 /* Pods-SafariExtension Extension (macOS)-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SafariExtension Extension (macOS)-acknowledgements.plist"; sourceTree = "<group>"; };
-		6052550BBDAFF637DE457B64CD2A3BB1 /* Pods-SafariExtension Extension (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SafariExtension Extension (iOS).debug.xcconfig"; sourceTree = "<group>"; };
-		625D1A3A590933B243E82DED8F9F89A1 /* Pods-SafariExtension Extension (macOS)-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SafariExtension Extension (macOS)-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6D036C0AFF8A154DB6ED1BC4FEA466A6 /* Pods-SafariExtension Extension (macOS).modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SafariExtension Extension (macOS).modulemap"; sourceTree = "<group>"; };
-		6F7CDB2A328D35A84C2C935B98DB8AA4 /* Pods-SafariExtension Extension (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SafariExtension Extension (macOS).debug.xcconfig"; sourceTree = "<group>"; };
-		7AA2685B6F610C6E4123C337CB600C06 /* Pods-SafariExtension (macOS)-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SafariExtension (macOS)-dummy.m"; sourceTree = "<group>"; };
-		7D204E56309AE12E6184020B8876B692 /* Pods-SafariExtension Extension (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SafariExtension Extension (iOS).release.xcconfig"; sourceTree = "<group>"; };
-		88F664792FBAD9B90E1CBCA972204119 /* Pods-SafariExtension Extension (iOS) */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SafariExtension Extension (iOS)"; path = Pods_SafariExtension_Extension__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AAC4024A3D95CDA7C5F856C3C11337B /* Pods-SafariExtension (macOS) */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SafariExtension (macOS)"; path = Pods_SafariExtension__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AA07A46CAE3DB8721A13E2DD62B292D /* Pods-SafariExtension (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SafariExtension (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		67DABA19BCFFD74F268B0B95C625D511 /* Pods-extApp Extension (macOS).modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-extApp Extension (macOS).modulemap"; sourceTree = "<group>"; };
+		6B1921FA3F13F1E83E153581C863985F /* Pods-extApp Extension (iOS).modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-extApp Extension (iOS).modulemap"; sourceTree = "<group>"; };
+		6E6789CE72CB745BC4818018AE90A529 /* Pods-extApp (macOS)-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-extApp (macOS)-umbrella.h"; sourceTree = "<group>"; };
+		75A337F2A920A84A6B2A5CBE16B2937F /* Pods-extApp (iOS) */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-extApp (iOS)"; path = Pods_extApp__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78F4BAFA16A70A3FD72313EC08E43D56 /* Pods-extApp (iOS)-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-extApp (iOS)-dummy.m"; sourceTree = "<group>"; };
+		86B12C14CFB313EE04F2DE72E801D5C5 /* Pods-extApp Extension (iOS)-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-extApp Extension (iOS)-acknowledgements.plist"; sourceTree = "<group>"; };
+		8C2DDC1D78F3B95B5D244C9343F379F7 /* Pods-extApp Extension (iOS)-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-extApp Extension (iOS)-Info.plist"; sourceTree = "<group>"; };
+		9758F2DFF7B82D13BB6D26E64FBA5C33 /* Pods-extApp Extension (macOS)-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-extApp Extension (macOS)-acknowledgements.markdown"; sourceTree = "<group>"; };
+		980D6183F8CE39B70F6CC6A8DC0D9C0C /* Pods-extApp (iOS)-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-extApp (iOS)-umbrella.h"; sourceTree = "<group>"; };
+		9A75B28F89DDDA6610C68E515D978C5B /* Pods-extApp (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-extApp (iOS).debug.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A4225497D3258D4E33226C9CD32B074C /* Pods-SafariExtension (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SafariExtension (macOS).release.xcconfig"; sourceTree = "<group>"; };
-		AAC8BEF3C105D527DF656BA0345E91DC /* Pods-SafariExtension Extension (macOS)-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SafariExtension Extension (macOS)-dummy.m"; sourceTree = "<group>"; };
-		AED247E6B9A6FE5AB465EFDC1C747DCD /* Pods-SafariExtension (iOS)-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SafariExtension (iOS)-acknowledgements.plist"; sourceTree = "<group>"; };
-		AF37BDFB73E3F60E155901889ECCD3F1 /* Pods-SafariExtension Extension (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SafariExtension Extension (macOS).release.xcconfig"; sourceTree = "<group>"; };
-		B11250FB227D9B383FEEFE0921310E31 /* Pods-SafariExtension (iOS) */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SafariExtension (iOS)"; path = Pods_SafariExtension__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B21934DE9BCE9CB33C9E78CF50D97E89 /* Pods-SafariExtension (iOS)-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SafariExtension (iOS)-umbrella.h"; sourceTree = "<group>"; };
-		BE6B70306420178EFF3F3919B240FD39 /* Pods-SafariExtension Extension (iOS)-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SafariExtension Extension (iOS)-acknowledgements.plist"; sourceTree = "<group>"; };
-		C26876F6D6858AA7CF9D7A43CAB7EF3E /* Pods-SafariExtension Extension (iOS)-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SafariExtension Extension (iOS)-dummy.m"; sourceTree = "<group>"; };
-		CA0A0E6785557BE3D5FC8D723C0355BE /* Pods-SafariExtension (macOS).modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SafariExtension (macOS).modulemap"; sourceTree = "<group>"; };
-		CA670DF3345A3B3E6A2D5008E1AAE1B4 /* Pods-SafariExtension (macOS)-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SafariExtension (macOS)-Info.plist"; sourceTree = "<group>"; };
-		D37DD0D1299F0B0FC66495D644A63691 /* Pods-SafariExtension Extension (iOS)-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SafariExtension Extension (iOS)-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DABB295D8E1DCD3C7FB351E779D318E5 /* Pods-SafariExtension (macOS)-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SafariExtension (macOS)-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F6C4E9DA735C611A74A9ABE3303D8DED /* Pods-SafariExtension Extension (macOS)-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SafariExtension Extension (macOS)-Info.plist"; sourceTree = "<group>"; };
-		FE5436E5C1427EA6513157E996FC6088 /* Pods-SafariExtension Extension (macOS) */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SafariExtension Extension (macOS)"; path = Pods_SafariExtension_Extension__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A355CB187049B297482787C237034E83 /* Pods-extApp Extension (macOS)-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-extApp Extension (macOS)-dummy.m"; sourceTree = "<group>"; };
+		A39AA89110306B2D1E169A091ADD05C8 /* Pods-extApp Extension (iOS)-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-extApp Extension (iOS)-umbrella.h"; sourceTree = "<group>"; };
+		C3547386C3420A46FB7D282490C42C64 /* Pods-extApp Extension (macOS)-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-extApp Extension (macOS)-umbrella.h"; sourceTree = "<group>"; };
+		C472C31A62BC4D754D483DF1D074F034 /* Pods-extApp Extension (iOS)-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-extApp Extension (iOS)-dummy.m"; sourceTree = "<group>"; };
+		C659455EF1356E2E58FB087979DCDB91 /* Pods-extApp (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-extApp (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		D64611D23A28653DD0BE0E0FE0D34384 /* Pods-extApp (macOS)-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-extApp (macOS)-Info.plist"; sourceTree = "<group>"; };
+		D861A9A254E54376532F8327B5DA1C7C /* Pods-extApp Extension (macOS) */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-extApp Extension (macOS)"; path = Pods_extApp_Extension__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D960DCBC19B6A366C9122FF1B1FDE2EE /* Pods-extApp Extension (macOS)-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-extApp Extension (macOS)-Info.plist"; sourceTree = "<group>"; };
+		DD3805A27461FCC9BFC41388E8489EC9 /* Pods-extApp (iOS)-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-extApp (iOS)-acknowledgements.plist"; sourceTree = "<group>"; };
+		DE4178E61746DDFDCB3F2F52CAEBA3D3 /* Pods-extApp Extension (iOS) */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-extApp Extension (iOS)"; path = Pods_extApp_Extension__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDAB89B0DAD97391891BF6E3C47A669E /* Pods-extApp (iOS).modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-extApp (iOS).modulemap"; sourceTree = "<group>"; };
+		EE828D643C9A7FA01A53442A7A033E31 /* Pods-extApp (macOS) */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-extApp (macOS)"; path = Pods_extApp__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0DBBA943ADCBA232F8EEE4B88EF793A /* Pods-extApp (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-extApp (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		F191446C174C8821BE72F803D09D970C /* Pods-extApp (macOS).modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-extApp (macOS).modulemap"; sourceTree = "<group>"; };
+		F20AECA498F22C8CF055C37EE267DFBC /* Pods-extApp (macOS)-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-extApp (macOS)-acknowledgements.plist"; sourceTree = "<group>"; };
+		FF1D82A344EC52499EBCBD725B691595 /* Pods-extApp Extension (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-extApp Extension (iOS).release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		02C43ACE99593A21F5AFFFA706EE7E5E /* Frameworks */ = {
+		D944069D67B46B7A9C1FFAB01656C640 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE492921A75D879A61BE3A829AC8D332 /* Cocoa.framework in Frameworks */,
+				0F9DDE7B05E505A40DEE17CDB79B2F49 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		96F065DDF04E99FF5F0BEF13A11EEE7A /* Frameworks */ = {
+		E883C8F614B404AC3BDFE1AD73F051F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DD29EC1C02C2B2A2716889196C170E3 /* Foundation.framework in Frameworks */,
+				5668E4BA3835E3D39BD2AA69730449EF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB799F151BBBBFF8367866675D1DF4FC /* Frameworks */ = {
+		EB84511899DD91D65FDE4A162ADF53F4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				296787CC08C8B8AC8CD4EA5B4F11F6D7 /* Foundation.framework in Frameworks */,
+				7F956F4321192D1A9D8B3A5B3E6A2669 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F6EBF4148927527363FD6416CA75797A /* Frameworks */ = {
+		F350EA9ADA4C97D27647053A7D151515 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				999241A9BCBD8D5166C3696F480ECE31 /* Cocoa.framework in Frameworks */,
+				C694108A0101E68A45ED0B56B95CB984 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1658B9E238EF2CC4E72A0F0DCB37B285 /* Pods-SafariExtension Extension (macOS) */ = {
-			isa = PBXGroup;
-			children = (
-				6D036C0AFF8A154DB6ED1BC4FEA466A6 /* Pods-SafariExtension Extension (macOS).modulemap */,
-				625D1A3A590933B243E82DED8F9F89A1 /* Pods-SafariExtension Extension (macOS)-acknowledgements.markdown */,
-				5EECC06EEF4AAB3F368FD05D9950E524 /* Pods-SafariExtension Extension (macOS)-acknowledgements.plist */,
-				AAC8BEF3C105D527DF656BA0345E91DC /* Pods-SafariExtension Extension (macOS)-dummy.m */,
-				F6C4E9DA735C611A74A9ABE3303D8DED /* Pods-SafariExtension Extension (macOS)-Info.plist */,
-				4AE91D2C34ACD9C6038334DDA0B4FDB9 /* Pods-SafariExtension Extension (macOS)-umbrella.h */,
-				6F7CDB2A328D35A84C2C935B98DB8AA4 /* Pods-SafariExtension Extension (macOS).debug.xcconfig */,
-				AF37BDFB73E3F60E155901889ECCD3F1 /* Pods-SafariExtension Extension (macOS).release.xcconfig */,
-			);
-			name = "Pods-SafariExtension Extension (macOS)";
-			path = "Target Support Files/Pods-SafariExtension Extension (macOS)";
-			sourceTree = "<group>";
-		};
 		41C052635D3E21350AC08C5F316759F6 /* OS X */ = {
 			isa = PBXGroup;
 			children = (
 				5A54C97DEB1A3977AC3A62AFF00971BF /* Cocoa.framework */,
 			);
 			name = "OS X";
+			sourceTree = "<group>";
+		};
+		49733BDBFDDAC63AB74518003F8954FC /* Pods-extApp (iOS) */ = {
+			isa = PBXGroup;
+			children = (
+				EDAB89B0DAD97391891BF6E3C47A669E /* Pods-extApp (iOS).modulemap */,
+				0653D4BA979EBC9BBCBDB70EA3E48009 /* Pods-extApp (iOS)-acknowledgements.markdown */,
+				DD3805A27461FCC9BFC41388E8489EC9 /* Pods-extApp (iOS)-acknowledgements.plist */,
+				78F4BAFA16A70A3FD72313EC08E43D56 /* Pods-extApp (iOS)-dummy.m */,
+				41C21C1A24E7DF1E3934B5C2A4405CFD /* Pods-extApp (iOS)-Info.plist */,
+				980D6183F8CE39B70F6CC6A8DC0D9C0C /* Pods-extApp (iOS)-umbrella.h */,
+				9A75B28F89DDDA6610C68E515D978C5B /* Pods-extApp (iOS).debug.xcconfig */,
+				F0DBBA943ADCBA232F8EEE4B88EF793A /* Pods-extApp (iOS).release.xcconfig */,
+			);
+			name = "Pods-extApp (iOS)";
+			path = "Target Support Files/Pods-extApp (iOS)";
 			sourceTree = "<group>";
 		};
 		4EDC20B56A0B9A8564E1FCEA191C83C4 /* Frameworks */ = {
@@ -132,63 +132,74 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		78E2597E32BBA8A8462ECFB523488739 /* Pods-SafariExtension (iOS) */ = {
+		5E688085350C66CABC91C0AB22183196 /* Pods-extApp Extension (iOS) */ = {
 			isa = PBXGroup;
 			children = (
-				480B919DA294D212555B269A2CBBD0A3 /* Pods-SafariExtension (iOS).modulemap */,
-				205507CA4D315985227D2E3C5DB991AA /* Pods-SafariExtension (iOS)-acknowledgements.markdown */,
-				AED247E6B9A6FE5AB465EFDC1C747DCD /* Pods-SafariExtension (iOS)-acknowledgements.plist */,
-				1DB683A09DF3A8C962D75FCA768D6D4E /* Pods-SafariExtension (iOS)-dummy.m */,
-				1DD0A6ED62502F7C5ED9BAEF4DAFF3FD /* Pods-SafariExtension (iOS)-Info.plist */,
-				B21934DE9BCE9CB33C9E78CF50D97E89 /* Pods-SafariExtension (iOS)-umbrella.h */,
-				9AA07A46CAE3DB8721A13E2DD62B292D /* Pods-SafariExtension (iOS).debug.xcconfig */,
-				059651D798D1CAE252F560B500B51C18 /* Pods-SafariExtension (iOS).release.xcconfig */,
+				6B1921FA3F13F1E83E153581C863985F /* Pods-extApp Extension (iOS).modulemap */,
+				1BA4DCB659574B5C217A68731CAA7BCB /* Pods-extApp Extension (iOS)-acknowledgements.markdown */,
+				86B12C14CFB313EE04F2DE72E801D5C5 /* Pods-extApp Extension (iOS)-acknowledgements.plist */,
+				C472C31A62BC4D754D483DF1D074F034 /* Pods-extApp Extension (iOS)-dummy.m */,
+				8C2DDC1D78F3B95B5D244C9343F379F7 /* Pods-extApp Extension (iOS)-Info.plist */,
+				A39AA89110306B2D1E169A091ADD05C8 /* Pods-extApp Extension (iOS)-umbrella.h */,
+				3259FA92C9F4D13BCDAE3804F8F856A7 /* Pods-extApp Extension (iOS).debug.xcconfig */,
+				FF1D82A344EC52499EBCBD725B691595 /* Pods-extApp Extension (iOS).release.xcconfig */,
 			);
-			name = "Pods-SafariExtension (iOS)";
-			path = "Target Support Files/Pods-SafariExtension (iOS)";
+			name = "Pods-extApp Extension (iOS)";
+			path = "Target Support Files/Pods-extApp Extension (iOS)";
 			sourceTree = "<group>";
 		};
-		9D945EEFB593BFDD4E12DA98C768DE7F /* Products */ = {
+		96C7177FF4B8C17DB044FCA5BC5D6317 /* Pods-extApp (macOS) */ = {
 			isa = PBXGroup;
 			children = (
-				B11250FB227D9B383FEEFE0921310E31 /* Pods-SafariExtension (iOS) */,
-				8AAC4024A3D95CDA7C5F856C3C11337B /* Pods-SafariExtension (macOS) */,
-				88F664792FBAD9B90E1CBCA972204119 /* Pods-SafariExtension Extension (iOS) */,
-				FE5436E5C1427EA6513157E996FC6088 /* Pods-SafariExtension Extension (macOS) */,
+				F191446C174C8821BE72F803D09D970C /* Pods-extApp (macOS).modulemap */,
+				56D841E9E494CE1BB758263FE9B1B7B9 /* Pods-extApp (macOS)-acknowledgements.markdown */,
+				F20AECA498F22C8CF055C37EE267DFBC /* Pods-extApp (macOS)-acknowledgements.plist */,
+				3A03E53ABC3FAF315A4EC33ED97FCE74 /* Pods-extApp (macOS)-dummy.m */,
+				D64611D23A28653DD0BE0E0FE0D34384 /* Pods-extApp (macOS)-Info.plist */,
+				6E6789CE72CB745BC4818018AE90A529 /* Pods-extApp (macOS)-umbrella.h */,
+				C659455EF1356E2E58FB087979DCDB91 /* Pods-extApp (macOS).debug.xcconfig */,
+				1BD3CA5299BC6EBD1F195B4971972005 /* Pods-extApp (macOS).release.xcconfig */,
+			);
+			name = "Pods-extApp (macOS)";
+			path = "Target Support Files/Pods-extApp (macOS)";
+			sourceTree = "<group>";
+		};
+		A912A10182EEC36A0593186B1E3B56DE /* Pods-extApp Extension (macOS) */ = {
+			isa = PBXGroup;
+			children = (
+				67DABA19BCFFD74F268B0B95C625D511 /* Pods-extApp Extension (macOS).modulemap */,
+				9758F2DFF7B82D13BB6D26E64FBA5C33 /* Pods-extApp Extension (macOS)-acknowledgements.markdown */,
+				23A5988D4F5C31876E03AC042394C16B /* Pods-extApp Extension (macOS)-acknowledgements.plist */,
+				A355CB187049B297482787C237034E83 /* Pods-extApp Extension (macOS)-dummy.m */,
+				D960DCBC19B6A366C9122FF1B1FDE2EE /* Pods-extApp Extension (macOS)-Info.plist */,
+				C3547386C3420A46FB7D282490C42C64 /* Pods-extApp Extension (macOS)-umbrella.h */,
+				2FE9E5C27D1765D29651BFC53D25C1AB /* Pods-extApp Extension (macOS).debug.xcconfig */,
+				375E8C31A510437D57A420232D267038 /* Pods-extApp Extension (macOS).release.xcconfig */,
+			);
+			name = "Pods-extApp Extension (macOS)";
+			path = "Target Support Files/Pods-extApp Extension (macOS)";
+			sourceTree = "<group>";
+		};
+		BBD1E1E77B7161F91EFE71A7EFC62C48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75A337F2A920A84A6B2A5CBE16B2937F /* Pods-extApp (iOS) */,
+				EE828D643C9A7FA01A53442A7A033E31 /* Pods-extApp (macOS) */,
+				DE4178E61746DDFDCB3F2F52CAEBA3D3 /* Pods-extApp Extension (iOS) */,
+				D861A9A254E54376532F8327B5DA1C7C /* Pods-extApp Extension (macOS) */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C158D76BB54B9A61A796F4914CCE282C /* Pods-SafariExtension (macOS) */ = {
+		C59EB951F073FFA63D63877FBA547368 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CA0A0E6785557BE3D5FC8D723C0355BE /* Pods-SafariExtension (macOS).modulemap */,
-				DABB295D8E1DCD3C7FB351E779D318E5 /* Pods-SafariExtension (macOS)-acknowledgements.markdown */,
-				470D42C9EF5A58B75AD7FCBC69448DA2 /* Pods-SafariExtension (macOS)-acknowledgements.plist */,
-				7AA2685B6F610C6E4123C337CB600C06 /* Pods-SafariExtension (macOS)-dummy.m */,
-				CA670DF3345A3B3E6A2D5008E1AAE1B4 /* Pods-SafariExtension (macOS)-Info.plist */,
-				5429EC988BE92EDF6E27ACE48108E054 /* Pods-SafariExtension (macOS)-umbrella.h */,
-				2756926985CA2308BF93B3922FCD954C /* Pods-SafariExtension (macOS).debug.xcconfig */,
-				A4225497D3258D4E33226C9CD32B074C /* Pods-SafariExtension (macOS).release.xcconfig */,
+				49733BDBFDDAC63AB74518003F8954FC /* Pods-extApp (iOS) */,
+				96C7177FF4B8C17DB044FCA5BC5D6317 /* Pods-extApp (macOS) */,
+				5E688085350C66CABC91C0AB22183196 /* Pods-extApp Extension (iOS) */,
+				A912A10182EEC36A0593186B1E3B56DE /* Pods-extApp Extension (macOS) */,
 			);
-			name = "Pods-SafariExtension (macOS)";
-			path = "Target Support Files/Pods-SafariExtension (macOS)";
-			sourceTree = "<group>";
-		};
-		CC06B6E92BBA8193B35DBEB83E76465A /* Pods-SafariExtension Extension (iOS) */ = {
-			isa = PBXGroup;
-			children = (
-				392C9E9384F9171FD25ABBCD3E1C3490 /* Pods-SafariExtension Extension (iOS).modulemap */,
-				D37DD0D1299F0B0FC66495D644A63691 /* Pods-SafariExtension Extension (iOS)-acknowledgements.markdown */,
-				BE6B70306420178EFF3F3919B240FD39 /* Pods-SafariExtension Extension (iOS)-acknowledgements.plist */,
-				C26876F6D6858AA7CF9D7A43CAB7EF3E /* Pods-SafariExtension Extension (iOS)-dummy.m */,
-				1E68F9B4119AE78E77E3C19C3DF1A60E /* Pods-SafariExtension Extension (iOS)-Info.plist */,
-				34459CF7A2AB462BC1AC38BB20EAA8EE /* Pods-SafariExtension Extension (iOS)-umbrella.h */,
-				6052550BBDAFF637DE457B64CD2A3BB1 /* Pods-SafariExtension Extension (iOS).debug.xcconfig */,
-				7D204E56309AE12E6184020B8876B692 /* Pods-SafariExtension Extension (iOS).release.xcconfig */,
-			);
-			name = "Pods-SafariExtension Extension (iOS)";
-			path = "Target Support Files/Pods-SafariExtension Extension (iOS)";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -196,8 +207,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				4EDC20B56A0B9A8564E1FCEA191C83C4 /* Frameworks */,
-				9D945EEFB593BFDD4E12DA98C768DE7F /* Products */,
-				DDC2CCBC5B2B65557732C32634606055 /* Targets Support Files */,
+				BBD1E1E77B7161F91EFE71A7EFC62C48 /* Products */,
+				C59EB951F073FFA63D63877FBA547368 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,125 +220,114 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		DDC2CCBC5B2B65557732C32634606055 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				78E2597E32BBA8A8462ECFB523488739 /* Pods-SafariExtension (iOS) */,
-				C158D76BB54B9A61A796F4914CCE282C /* Pods-SafariExtension (macOS) */,
-				CC06B6E92BBA8193B35DBEB83E76465A /* Pods-SafariExtension Extension (iOS) */,
-				1658B9E238EF2CC4E72A0F0DCB37B285 /* Pods-SafariExtension Extension (macOS) */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3C6AE7BD695B46C3B186B1A4B92B043B /* Headers */ = {
+		09A98EDC12F60F9807C0F838313C9322 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CD05D572F913CC96E91698649155D37 /* Pods-SafariExtension (macOS)-umbrella.h in Headers */,
+				64FB46781F5257E0C507F22816C772B7 /* Pods-extApp (macOS)-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A140D846FE5E197BACEF872F6BE50589 /* Headers */ = {
+		5D6C004C6FB61C29161C26BB42B0685B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E4D1B03031BBCFD779944A2E701BFED /* Pods-SafariExtension (iOS)-umbrella.h in Headers */,
+				CF483706FF076866A7129B31DC1F80E8 /* Pods-extApp Extension (macOS)-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2E0165C6CB52C8BD0C894215653C085 /* Headers */ = {
+		9E9AF482B76DB5A93636E95AB84C0FEA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F8449563014333C998A0E21C324D427 /* Pods-SafariExtension Extension (iOS)-umbrella.h in Headers */,
+				2786025E7176696B45AC532163E2531F /* Pods-extApp (iOS)-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E3422507C8EA11791C0ED505B0F6C649 /* Headers */ = {
+		D0EB7427E0E588257779F3F87EA30C22 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4598ACE864B42FBF3F9447BC20DA1B5E /* Pods-SafariExtension Extension (macOS)-umbrella.h in Headers */,
+				E8B22A930498378104B67788AE248F71 /* Pods-extApp Extension (iOS)-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3AAB8FE7BA4848139FFFCE403F8B5896 /* Pods-SafariExtension (macOS) */ = {
+		3E0CD2A903A675D9FCA7CB131509826B /* Pods-extApp Extension (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D26B0B9250DEC13C843C3BFE3B67574E /* Build configuration list for PBXNativeTarget "Pods-SafariExtension (macOS)" */;
+			buildConfigurationList = D6CF1DBA236583E7CFEE48B62C130246 /* Build configuration list for PBXNativeTarget "Pods-extApp Extension (iOS)" */;
 			buildPhases = (
-				3C6AE7BD695B46C3B186B1A4B92B043B /* Headers */,
-				BBE96B2443A45983E2B6189E2DDDA03B /* Sources */,
-				F6EBF4148927527363FD6416CA75797A /* Frameworks */,
-				C96C34D0104D7EABB61F0B4907ED8C27 /* Resources */,
+				D0EB7427E0E588257779F3F87EA30C22 /* Headers */,
+				58A3FB5CBC68A2F9FBA08006AD5FA320 /* Sources */,
+				EB84511899DD91D65FDE4A162ADF53F4 /* Frameworks */,
+				E1605CDE5E1B80E413FEB0FE74E51C21 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-SafariExtension (macOS)";
-			productName = Pods_SafariExtension__macOS_;
-			productReference = 8AAC4024A3D95CDA7C5F856C3C11337B /* Pods-SafariExtension (macOS) */;
+			name = "Pods-extApp Extension (iOS)";
+			productName = Pods_extApp_Extension__iOS_;
+			productReference = DE4178E61746DDFDCB3F2F52CAEBA3D3 /* Pods-extApp Extension (iOS) */;
 			productType = "com.apple.product-type.framework";
 		};
-		76654B9EC6BE3DB6FF6C09E0CD180B9C /* Pods-SafariExtension Extension (iOS) */ = {
+		759DEFC2CC5108E797A5D2D955AE0263 /* Pods-extApp (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 309CFE80FA91293332AA43B449991971 /* Build configuration list for PBXNativeTarget "Pods-SafariExtension Extension (iOS)" */;
+			buildConfigurationList = D67DA678E4C96E0490370EB38F4DC68D /* Build configuration list for PBXNativeTarget "Pods-extApp (iOS)" */;
 			buildPhases = (
-				A2E0165C6CB52C8BD0C894215653C085 /* Headers */,
-				9D11270C9F0FD0221ABCD641263A4B4C /* Sources */,
-				BB799F151BBBBFF8367866675D1DF4FC /* Frameworks */,
-				98EB1900CE21686B600C7AB8D80469C4 /* Resources */,
+				9E9AF482B76DB5A93636E95AB84C0FEA /* Headers */,
+				F542F683090BBE90B269F57192B06F01 /* Sources */,
+				E883C8F614B404AC3BDFE1AD73F051F0 /* Frameworks */,
+				C37C94ECEECFF5062B70D1AA4B699E48 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-SafariExtension Extension (iOS)";
-			productName = Pods_SafariExtension_Extension__iOS_;
-			productReference = 88F664792FBAD9B90E1CBCA972204119 /* Pods-SafariExtension Extension (iOS) */;
+			name = "Pods-extApp (iOS)";
+			productName = Pods_extApp__iOS_;
+			productReference = 75A337F2A920A84A6B2A5CBE16B2937F /* Pods-extApp (iOS) */;
 			productType = "com.apple.product-type.framework";
 		};
-		80D17DFEC87786CD88D7EE427C562960 /* Pods-SafariExtension Extension (macOS) */ = {
+		D406F025BABB3975FA898670A4EC5332 /* Pods-extApp Extension (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A895F8E7F612BD85FCA74BCDF253E6C0 /* Build configuration list for PBXNativeTarget "Pods-SafariExtension Extension (macOS)" */;
+			buildConfigurationList = 9196E116F09505D9C12D5EB1E43F6CE5 /* Build configuration list for PBXNativeTarget "Pods-extApp Extension (macOS)" */;
 			buildPhases = (
-				E3422507C8EA11791C0ED505B0F6C649 /* Headers */,
-				3F6BF4C354CE33817FF0038E298D5CE2 /* Sources */,
-				02C43ACE99593A21F5AFFFA706EE7E5E /* Frameworks */,
-				BE20E5B5DAE937083DD40B2EDEE48E8D /* Resources */,
+				5D6C004C6FB61C29161C26BB42B0685B /* Headers */,
+				903DAEC402DFE4A97C1EB6327B446436 /* Sources */,
+				F350EA9ADA4C97D27647053A7D151515 /* Frameworks */,
+				124F392D0714D1874AE65F5D54A3E293 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-SafariExtension Extension (macOS)";
-			productName = Pods_SafariExtension_Extension__macOS_;
-			productReference = FE5436E5C1427EA6513157E996FC6088 /* Pods-SafariExtension Extension (macOS) */;
+			name = "Pods-extApp Extension (macOS)";
+			productName = Pods_extApp_Extension__macOS_;
+			productReference = D861A9A254E54376532F8327B5DA1C7C /* Pods-extApp Extension (macOS) */;
 			productType = "com.apple.product-type.framework";
 		};
-		DF421917AE2C8867CFCB43F798F63670 /* Pods-SafariExtension (iOS) */ = {
+		D85660EFFA05A91A2C158829BCDEE829 /* Pods-extApp (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 56D87A5BE91992CF8CDAA833EF58A8D8 /* Build configuration list for PBXNativeTarget "Pods-SafariExtension (iOS)" */;
+			buildConfigurationList = 4102EFA547F46DE382CAB88B2429E888 /* Build configuration list for PBXNativeTarget "Pods-extApp (macOS)" */;
 			buildPhases = (
-				A140D846FE5E197BACEF872F6BE50589 /* Headers */,
-				A1282AC591F7FBB05442EB23B600E66D /* Sources */,
-				96F065DDF04E99FF5F0BEF13A11EEE7A /* Frameworks */,
-				214D10AC7D45799A8C1ADF1933CD4F11 /* Resources */,
+				09A98EDC12F60F9807C0F838313C9322 /* Headers */,
+				B945CB937F80BA2A121EFA9BEB03CA2B /* Sources */,
+				D944069D67B46B7A9C1FFAB01656C640 /* Frameworks */,
+				1104D4F91AAC5D662101572033A94A49 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-SafariExtension (iOS)";
-			productName = Pods_SafariExtension__iOS_;
-			productReference = B11250FB227D9B383FEEFE0921310E31 /* Pods-SafariExtension (iOS) */;
+			name = "Pods-extApp (macOS)";
+			productName = Pods_extApp__macOS_;
+			productReference = EE828D643C9A7FA01A53442A7A033E31 /* Pods-extApp (macOS) */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -348,41 +348,41 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 9D945EEFB593BFDD4E12DA98C768DE7F /* Products */;
+			productRefGroup = BBD1E1E77B7161F91EFE71A7EFC62C48 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DF421917AE2C8867CFCB43F798F63670 /* Pods-SafariExtension (iOS) */,
-				3AAB8FE7BA4848139FFFCE403F8B5896 /* Pods-SafariExtension (macOS) */,
-				76654B9EC6BE3DB6FF6C09E0CD180B9C /* Pods-SafariExtension Extension (iOS) */,
-				80D17DFEC87786CD88D7EE427C562960 /* Pods-SafariExtension Extension (macOS) */,
+				759DEFC2CC5108E797A5D2D955AE0263 /* Pods-extApp (iOS) */,
+				D85660EFFA05A91A2C158829BCDEE829 /* Pods-extApp (macOS) */,
+				3E0CD2A903A675D9FCA7CB131509826B /* Pods-extApp Extension (iOS) */,
+				D406F025BABB3975FA898670A4EC5332 /* Pods-extApp Extension (macOS) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		214D10AC7D45799A8C1ADF1933CD4F11 /* Resources */ = {
+		1104D4F91AAC5D662101572033A94A49 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98EB1900CE21686B600C7AB8D80469C4 /* Resources */ = {
+		124F392D0714D1874AE65F5D54A3E293 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE20E5B5DAE937083DD40B2EDEE48E8D /* Resources */ = {
+		C37C94ECEECFF5062B70D1AA4B699E48 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C96C34D0104D7EABB61F0B4907ED8C27 /* Resources */ = {
+		E1605CDE5E1B80E413FEB0FE74E51C21 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -392,155 +392,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3F6BF4C354CE33817FF0038E298D5CE2 /* Sources */ = {
+		58A3FB5CBC68A2F9FBA08006AD5FA320 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				350FCF6FC1B21C810E259038C15946DD /* Pods-SafariExtension Extension (macOS)-dummy.m in Sources */,
+				D64C23B4F29908616254FC8C39B04EF4 /* Pods-extApp Extension (iOS)-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D11270C9F0FD0221ABCD641263A4B4C /* Sources */ = {
+		903DAEC402DFE4A97C1EB6327B446436 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5C329E2E94C19597751D43919D7EE97 /* Pods-SafariExtension Extension (iOS)-dummy.m in Sources */,
+				4442CB2DED6557D959AC0158949BB6BA /* Pods-extApp Extension (macOS)-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1282AC591F7FBB05442EB23B600E66D /* Sources */ = {
+		B945CB937F80BA2A121EFA9BEB03CA2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4018E81550394FE8DCB41FE24CFE6ABC /* Pods-SafariExtension (iOS)-dummy.m in Sources */,
+				1057637842DB548D5EA735DE2ECBEBE6 /* Pods-extApp (macOS)-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BBE96B2443A45983E2B6189E2DDDA03B /* Sources */ = {
+		F542F683090BBE90B269F57192B06F01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E8B3AA85CD64604FB8A975AFA9A6CD3 /* Pods-SafariExtension (macOS)-dummy.m in Sources */,
+				9D1D553BAD187C0B4289AAF8BCBA18C0 /* Pods-extApp (iOS)-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		59AD4AA32B28DD4DE3C7646C83F330AF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 059651D798D1CAE252F560B500B51C18 /* Pods-SafariExtension (iOS).release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SafariExtension (iOS)/Pods-SafariExtension (iOS)-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SafariExtension (iOS)/Pods-SafariExtension (iOS).modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5B6EED57BC92CE87047BD406783450FC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2756926985CA2308BF93B3922FCD954C /* Pods-SafariExtension (macOS).debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SafariExtension (macOS)/Pods-SafariExtension (macOS)-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MODULEMAP_FILE = "Target Support Files/Pods-SafariExtension (macOS)/Pods-SafariExtension (macOS).modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5EF121B3E6F07F6755EA3AAB1AFE66AD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AA07A46CAE3DB8721A13E2DD62B292D /* Pods-SafariExtension (iOS).debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SafariExtension (iOS)/Pods-SafariExtension (iOS)-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SafariExtension (iOS)/Pods-SafariExtension (iOS).modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		66F68734668B76BD4C8EB044AD178250 /* Release */ = {
+		3D20E7A45A88A1F3F02644AFC0D8AFD8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -590,7 +477,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -603,47 +490,83 @@
 			};
 			name = Release;
 		};
-		76663390F8AC336F477C6C00F83AAFDA /* Release */ = {
+		511C09C04A066BA91F98065A7DF80685 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF37BDFB73E3F60E155901889ECCD3F1 /* Pods-SafariExtension Extension (macOS).release.xcconfig */;
+			baseConfigurationReference = 3259FA92C9F4D13BCDAE3804F8F856A7 /* Pods-extApp Extension (iOS).debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SafariExtension Extension (macOS)/Pods-SafariExtension Extension (macOS)-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-extApp Extension (iOS)/Pods-extApp Extension (iOS)-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MODULEMAP_FILE = "Target Support Files/Pods-SafariExtension Extension (macOS)/Pods-SafariExtension Extension (macOS).modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-extApp Extension (iOS)/Pods-extApp Extension (iOS).modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		A05011F14E3370DC18925714C48EE91F /* Debug */ = {
+		7BEEDBD871D8EA7834DCA2FB786E09FC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F7CDB2A328D35A84C2C935B98DB8AA4 /* Pods-SafariExtension Extension (macOS).debug.xcconfig */;
+			baseConfigurationReference = 9A75B28F89DDDA6610C68E515D978C5B /* Pods-extApp (iOS).debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-extApp (iOS)/Pods-extApp (iOS)-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-extApp (iOS)/Pods-extApp (iOS).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B1077A4AB9FC03807BB25EC238304464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C659455EF1356E2E58FB087979DCDB91 /* Pods-extApp (macOS).debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -657,7 +580,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SafariExtension Extension (macOS)/Pods-SafariExtension Extension (macOS)-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-extApp (macOS)/Pods-extApp (macOS)-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -666,7 +589,7 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MODULEMAP_FILE = "Target Support Files/Pods-SafariExtension Extension (macOS)/Pods-SafariExtension Extension (macOS).modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-extApp (macOS)/Pods-extApp (macOS).modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -679,9 +602,9 @@
 			};
 			name = Debug;
 		};
-		AD7E7DE6E882CDA506EE24988B6DED87 /* Release */ = {
+		B26E33111E47C2174E4596B30B10E024 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D204E56309AE12E6184020B8876B692 /* Pods-SafariExtension Extension (iOS).release.xcconfig */;
+			baseConfigurationReference = F0DBBA943ADCBA232F8EEE4B88EF793A /* Pods-extApp (iOS).release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -693,16 +616,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SafariExtension Extension (iOS)/Pods-SafariExtension Extension (iOS)-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-extApp (iOS)/Pods-extApp (iOS)-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SafariExtension Extension (iOS)/Pods-SafariExtension Extension (iOS).modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-extApp (iOS)/Pods-extApp (iOS).modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -717,9 +640,9 @@
 			};
 			name = Release;
 		};
-		BCDF7671ABDDC1C7F3F117766ABF11AC /* Release */ = {
+		C4E31B4E6261F0BDC38B7AE963F4C102 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4225497D3258D4E33226C9CD32B074C /* Pods-SafariExtension (macOS).release.xcconfig */;
+			baseConfigurationReference = 375E8C31A510437D57A420232D267038 /* Pods-extApp Extension (macOS).release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -733,7 +656,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SafariExtension (macOS)/Pods-SafariExtension (macOS)-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-extApp Extension (macOS)/Pods-extApp Extension (macOS)-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -742,7 +665,7 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MODULEMAP_FILE = "Target Support Files/Pods-SafariExtension (macOS)/Pods-SafariExtension (macOS).modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-extApp Extension (macOS)/Pods-extApp Extension (macOS).modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -755,7 +678,83 @@
 			};
 			name = Release;
 		};
-		C0A39DFAFCB51B6A8BC6AE0C030A4EC1 /* Debug */ = {
+		C78E0299028FEAFDBF9581519C294D31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BD3CA5299BC6EBD1F195B4971972005 /* Pods-extApp (macOS).release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-extApp (macOS)/Pods-extApp (macOS)-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Target Support Files/Pods-extApp (macOS)/Pods-extApp (macOS).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D66C0E28D365CC0F54B1370AEBBE9A67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FE9E5C27D1765D29651BFC53D25C1AB /* Pods-extApp Extension (macOS).debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-extApp Extension (macOS)/Pods-extApp Extension (macOS)-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Target Support Files/Pods-extApp Extension (macOS)/Pods-extApp Extension (macOS).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DB7531A5B603891270EB721850C59F9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -808,7 +807,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -822,9 +821,9 @@
 			};
 			name = Debug;
 		};
-		F6A0E69F1FA927E1B0820DCC5CAF07E8 /* Debug */ = {
+		F5C646AC8100A37E30AF236E1755078A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6052550BBDAFF637DE457B64CD2A3BB1 /* Pods-SafariExtension Extension (iOS).debug.xcconfig */;
+			baseConfigurationReference = FF1D82A344EC52499EBCBD725B691595 /* Pods-extApp Extension (iOS).release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -836,7 +835,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SafariExtension Extension (iOS)/Pods-SafariExtension Extension (iOS)-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-extApp Extension (iOS)/Pods-extApp Extension (iOS)-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -845,7 +844,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SafariExtension Extension (iOS)/Pods-SafariExtension Extension (iOS).modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-extApp Extension (iOS)/Pods-extApp Extension (iOS).modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -854,19 +853,20 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		309CFE80FA91293332AA43B449991971 /* Build configuration list for PBXNativeTarget "Pods-SafariExtension Extension (iOS)" */ = {
+		4102EFA547F46DE382CAB88B2429E888 /* Build configuration list for PBXNativeTarget "Pods-extApp (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F6A0E69F1FA927E1B0820DCC5CAF07E8 /* Debug */,
-				AD7E7DE6E882CDA506EE24988B6DED87 /* Release */,
+				B1077A4AB9FC03807BB25EC238304464 /* Debug */,
+				C78E0299028FEAFDBF9581519C294D31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -874,35 +874,35 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C0A39DFAFCB51B6A8BC6AE0C030A4EC1 /* Debug */,
-				66F68734668B76BD4C8EB044AD178250 /* Release */,
+				DB7531A5B603891270EB721850C59F9C /* Debug */,
+				3D20E7A45A88A1F3F02644AFC0D8AFD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		56D87A5BE91992CF8CDAA833EF58A8D8 /* Build configuration list for PBXNativeTarget "Pods-SafariExtension (iOS)" */ = {
+		9196E116F09505D9C12D5EB1E43F6CE5 /* Build configuration list for PBXNativeTarget "Pods-extApp Extension (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5EF121B3E6F07F6755EA3AAB1AFE66AD /* Debug */,
-				59AD4AA32B28DD4DE3C7646C83F330AF /* Release */,
+				D66C0E28D365CC0F54B1370AEBBE9A67 /* Debug */,
+				C4E31B4E6261F0BDC38B7AE963F4C102 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A895F8E7F612BD85FCA74BCDF253E6C0 /* Build configuration list for PBXNativeTarget "Pods-SafariExtension Extension (macOS)" */ = {
+		D67DA678E4C96E0490370EB38F4DC68D /* Build configuration list for PBXNativeTarget "Pods-extApp (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A05011F14E3370DC18925714C48EE91F /* Debug */,
-				76663390F8AC336F477C6C00F83AAFDA /* Release */,
+				7BEEDBD871D8EA7834DCA2FB786E09FC /* Debug */,
+				B26E33111E47C2174E4596B30B10E024 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D26B0B9250DEC13C843C3BFE3B67574E /* Build configuration list for PBXNativeTarget "Pods-SafariExtension (macOS)" */ = {
+		D6CF1DBA236583E7CFEE48B62C130246 /* Build configuration list for PBXNativeTarget "Pods-extApp Extension (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5B6EED57BC92CE87047BD406783450FC /* Debug */,
-				BCDF7671ABDDC1C7F3F117766ABF11AC /* Release */,
+				511C09C04A066BA91F98065A7DF80685 /* Debug */,
+				F5C646AC8100A37E30AF236E1755078A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

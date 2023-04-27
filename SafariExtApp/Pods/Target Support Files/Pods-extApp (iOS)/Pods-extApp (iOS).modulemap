@@ -1,0 +1,6 @@
+framework module Pods_extApp__iOS_ {
+  umbrella header "Pods-extApp (iOS)-umbrella.h"
+
+  export *
+  module * { export * }
+}

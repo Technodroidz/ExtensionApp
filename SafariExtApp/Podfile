@@ -1,34 +1,34 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'SafariExtension (iOS)' do
+target 'extApp (iOS)' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for SafariExtension (iOS)
+  # Pods for extApp (iOS)
 
 end
 
-target 'SafariExtension (macOS)' do
+target 'extApp (macOS)' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for SafariExtension (macOS)
+  # Pods for extApp (macOS)
 
 end
 
-target 'SafariExtension Extension (iOS)' do
+target 'extApp Extension (iOS)' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for SafariExtension Extension (iOS)
+  # Pods for extApp Extension (iOS)
 
 end
 
-target 'SafariExtension Extension (macOS)' do
+target 'extApp Extension (macOS)' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for SafariExtension Extension (macOS)
+  # Pods for extApp Extension (macOS)
 
 end

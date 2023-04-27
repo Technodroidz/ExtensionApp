@@ -4,22 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-SafariExtension (iOS).xcscheme</key>
+		<key>Pods-extApp (iOS).xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-SafariExtension (macOS).xcscheme</key>
+		<key>Pods-extApp (macOS).xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-SafariExtension Extension (iOS).xcscheme</key>
+		<key>Pods-extApp Extension (iOS).xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-SafariExtension Extension (macOS).xcscheme</key>
+		<key>Pods-extApp Extension (macOS).xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
