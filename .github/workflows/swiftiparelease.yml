@@ -24,10 +24,10 @@ jobs:
         working-directory: SafariExtApp
 
       - name: Build and Archive
-        run: xcodebuild -workspace SafariExtension.xcworkspace -scheme SafariExtApp -destination "generic/platform=iOS" clean archive -archivePath SafariExtApp.xcarchive
+        run: xcodebuild -workspace extApp.xcworkspace -scheme SafariExtApp -destination "generic/platform=iOS" clean archive -archivePath extApp.xcarchive
 
       - name: Create IPA
-        run: xcodebuild -exportArchive -archivePath SafariExtApp.xcarchive -exportPath . -exportOptionsPlist exportOptions.plist -allowProvisioningUpdates
+        run: xcodebuild -exportArchive -archivePath extApp.xcarchive -exportPath . -exportOptionsPlist exportOptions.plist -allowProvisioningUpdates
 
       - name: Install fastlane
         run: sudo gem install fastlane -NV
