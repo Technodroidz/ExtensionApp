@@ -9,7 +9,7 @@ target 'extApp (iOS)' do
   use_frameworks!
 
   # Pods for extApp (iOS)
-  pod 'Alamofire', '4.9.1'
+  pod 'Alamofire'
 
 end
 
