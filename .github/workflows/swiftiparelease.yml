@@ -37,12 +37,9 @@ jobs:
           sudo gem install nokogiri -- --use-system-libraries=true --with-xml2-include=/usr/local/opt/libxml2/include/libxml2 --with-xml2-lib=/usr/local/opt/libxml2/lib
           sudo gem install spaceship
           sudo gem install transporter 
-      
-      - name: Add setup-actool repository
-        uses: apple-actions/setup-actool@v1
 
       - name: Authenticate with App Store Connect
-        uses: apple-actions/setup-actool@v1
+        uses: apple/setup-actool@v1
         with:
           username: ${{ secrets.APPLE_ID }}
           password: ${{ secrets.APP_SPECIFIC_PASSWORD }}
