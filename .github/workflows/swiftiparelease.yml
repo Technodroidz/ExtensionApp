@@ -21,7 +21,7 @@ jobs:
 
       - name: Install dependencies
         run: pod install
-        working-directory: ./SafariExtApp
+        working-directory: SafariExtApp
 
       - name: Build and Archive
         run: xcodebuild -workspace SafariExtension.xcworkspace -scheme SafariExtApp -destination "generic/platform=iOS" clean archive -archivePath SafariExtApp.xcarchive
