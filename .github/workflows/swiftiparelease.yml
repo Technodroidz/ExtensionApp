@@ -26,8 +26,3 @@ jobs:
       - name: Build
         run: xcodebuild -workspace extApp.xcworkspace -scheme extApp -destination "generic/platform=iOS" clean build CODE_SIGN_STYLE=Automatic
         working-directory: ./SafariExtApp
-
-      - name: Upload IPA to GitHub Releases
-        uses: svenstaro/upload-release-action@v2
-        with:
-          args: SafariExtApp.ipa
