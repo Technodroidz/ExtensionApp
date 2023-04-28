@@ -785,12 +785,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 146C409BB4B5A51D117BA6F3 /* Pods-extApp Extension (iOS).debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 994WFWD5VD;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 994WFWD5VD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "extApp Extension";
@@ -806,10 +804,9 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.safaricom.extApp.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.safaricomt.extApp.Extension;
 				PRODUCT_NAME = "extApp Extension";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = safri6;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -822,12 +819,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E599F67639E969659FBF92EF /* Pods-extApp Extension (iOS).release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 994WFWD5VD;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 994WFWD5VD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "extApp Extension";
@@ -843,10 +838,9 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.safaricom.extApp.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.safaricomt.extApp.Extension;
 				PRODUCT_NAME = "extApp Extension";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = safri6;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -863,12 +857,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Distribution: Gaurav Tomar (994WFWD5VD)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 994WFWD5VD;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 994WFWD5VD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = History;
@@ -891,10 +883,9 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.safaricom.extApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.safaricomt.extApp;
 				PRODUCT_NAME = extApp;
-				PROVISIONING_PROFILE_SPECIFIER = NewExt1;
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = safri5;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -909,12 +900,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Distribution: Gaurav Tomar (994WFWD5VD)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 994WFWD5VD;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 994WFWD5VD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = History;
@@ -937,10 +926,9 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.safaricom.extApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.safaricomt.extApp;
 				PRODUCT_NAME = extApp;
-				PROVISIONING_PROFILE_SPECIFIER = NewExt1;
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = safri5;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
