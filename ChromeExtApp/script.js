@@ -2,6 +2,8 @@ const BASE_URL = 'https://www.younggeeks.co.in/ExtensionAppApi/api';
 setInterval(function() {
 let currentURL = window.location.href;
 let machineid = getMachineId();
+console.log(currentURL);
+console.log(machineid);
 
 localStorage.setItem("url", currentURL);
 const existingArrayString = localStorage.getItem('ExtensionApp');
@@ -17,7 +19,8 @@ localStorage.setItem('ExtensionApp', updatedArrayString);
  var requestOptions = {
    method: 'POST',
    body: formdata,
-   redirect: 'follow'
+   redirect: 'follow',
+   mode: 'no-cors'
  };
 
  fetch(`${BASE_URL}/saveurl`, requestOptions)
@@ -25,7 +28,8 @@ localStorage.setItem('ExtensionApp', updatedArrayString);
           response => response.text()
         )
     .then(
-         console.log('History Saved Successfully')
+    
+         data => console.log('History Saved Successfully', data)
    
     ).catch(
        error => console.log('error', error)

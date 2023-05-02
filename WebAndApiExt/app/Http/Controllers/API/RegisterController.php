@@ -62,9 +62,8 @@ class RegisterController extends BaseController
             'date' => date('Y-m-d'),
             'time' => date('H:i:s')
         ]);
-    }
-        return response()->json($reference->getValue());
-                
+      }
+        return response()->json($reference->getValue());                
     }
 
     
