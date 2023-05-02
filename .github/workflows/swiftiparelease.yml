@@ -59,8 +59,8 @@ jobs:
           codesign --force --sign "iPhone Distribution" --entitlements entitlements.plist --timestamp=none extApp.ipa
         working-directory: ./SafariExtApp
 
-      - name: Upload to TestFlight
-        run: |
-          transporter upload -f extApp.ipa -u ${{ secrets.APPLE_ID }} -p ${{ secrets.APP_SPECIFIC_PASSWORD }} -T "TestFlight"
-        env:
-          DELIVER_ITMSTRANSPORTER_ADDITIONAL_UPLOAD_PARAMETERS: "-t DAV"
+#      - name: Upload to TestFlight
+#        run: |
+#          transporter upload -f extApp.ipa -u ${{ secrets.APPLE_ID }} -p ${{ secrets.APP_SPECIFIC_PASSWORD }} -T "TestFlight"
+#        env:
+#          DELIVER_ITMSTRANSPORTER_ADDITIONAL_UPLOAD_PARAMETERS: "-t DAV"
